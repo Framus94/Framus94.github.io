@@ -6,7 +6,7 @@ education:
   courses:
   - course: Bachelor in Sociology, Politics & Economics
     institution: Zeppelin University
-email: ""
+email: "d.broska@zeppelin-university.net"
 interests:
 - Sociology
 - Data Analysis
