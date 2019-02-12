@@ -6,69 +6,100 @@
     <description>Recent content in David Broska on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <title>Economic Origins and Outcomes of the Arab Spring</title>
+      <link>/post/arab-spring/arab-spring-origins-outcomes/</link>
+      <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/jupyter/</guid>
+      <guid>/post/arab-spring/arab-spring-origins-outcomes/</guid>
       <description>
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-revolution-constraint&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;1&lt;/span&gt; The Revolution Constraint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#evidence-from-the-arab-spring&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2&lt;/span&gt; Evidence from the Arab Spring&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#the-case-of-egypt&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2.1&lt;/span&gt; The case of Egypt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#a-comparative-perspective&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;2.2&lt;/span&gt; A comparative perspective&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusion&#34;&gt;&lt;span class=&#34;toc-section-number&#34;&gt;3&lt;/span&gt; Conclusion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&#34;./academic_0_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;install-python-and-jupyter&#34;&gt;Install Python and Jupyter&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34;&gt;Install Anaconda&lt;/a&gt; which includes Python 3 and Jupyter notebook.&lt;/p&gt;
-
-&lt;p&gt;Otherwise, for advanced users, install Jupyter notebook with &lt;code&gt;pip3 install jupyter&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;create-a-new-blog-post-as-usual-https-sourcethemes-com-academic-docs-managing-content-create-a-blog-post&#34;&gt;Create a new blog post &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#create-a-blog-post&#34; target=&#34;_blank&#34;&gt;as usual&lt;/a&gt;&lt;/h2&gt;
-
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY_WEBSITE_FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;my-post&lt;/code&gt; with the file path to your Academic website folder and a name for your blog post (without spaces), respectively:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;
-hugo new  --kind post post/my-post
-cd &amp;lt;MY_WEBSITE_FOLDER&amp;gt;/content/post/my-post/
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-
-&lt;p&gt;Run the following command to start Jupyter within your new blog post folder. Then create a new Jupyter notebook (&lt;em&gt;New &amp;gt; Python Notebook&lt;/em&gt;) or upload a notebook.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter notebook
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert Untitled.ipynb --to markdown --NbConvertApp.output_files_dir=.
-
-# Copy the contents of Untitled.md and append it to index.md:
-cat Untitled.md | tee -a index.md
-
-# Remove the temporary file:
-rm Untitled.md
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-
-&lt;p&gt;Open &lt;code&gt;index.md&lt;/code&gt; in your text editor and edit the title etc. in the &lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34;&gt;front matter&lt;/a&gt; according to your preference.&lt;/p&gt;
-
-&lt;p&gt;To set a &lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34;&gt;featured image&lt;/a&gt;, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-
-&lt;p&gt;For other tips, such as using math, see the guide on &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;writing content with Academic&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The term &lt;em&gt;Arab Spring&lt;/em&gt; denotes a variety of regime protests, uprisings and armed rebellions, which differ from each other in several respects. On the one hand, they differ in their extent, ranging from local to nationwide activities, and on the other hand in the achievement of different results: from minor state concessions to appease the population, to stronger reactions in which the government was overthrown. Some countries plunged into civil war and others became autocratic regimes. As a result, social unrest in the affected countries varied widely, going along with remarkable differences in how the distribution of political power of economic resources has changed with the events of Arab Spring. How can these differences between countries be explained?&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/post-arab-spring/arab-spring-map.png&#34; alt=&#34;Image Credit: The Economist&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Image Credit: &lt;a href=&#34;https://www.economist.com/taxonomy/term/104/0?page=37&#34;&gt;The Economist&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;In fact, economic aspects were one of the main explanations for the political unrest in Arab Spring, which was used not only by many scholars but also by the media. The Economist’s &lt;em&gt;Shoe Thrower’s Index&lt;/em&gt; is a remarkable example. It has been assumed that the youth population, years of government, corruption, GDP per capita and several other indicators measure the vulnerability of Arab countries to revolution. It turned out that the potential for unrest in the Arab world in 2010 was highest in Yemen, Libya, Egypt and Syria, while countries such as Qatar, Kuwait, the United Arab Emirates and Lebanon achieved the lowest values &lt;span class=&#34;citation&#34;&gt;(The Economist 2011)&lt;/span&gt;. Although the index has no theoretical background, its predictions of social unrest are indeed empirically supported, as discussed below.&lt;/p&gt;
+&lt;p&gt;In addition, the scientific literature discussed in this paper supports some of the indicators used by the Economist. Consequently, the economic situation appears to be an appropriate indicator of social unrest. However, the economic origins of regime-critical movements can be examined in more detail and from the perspective of a more systematic approach. Acemoglu and Robinson’s &lt;span class=&#34;citation&#34;&gt;(2006)&lt;/span&gt; &lt;em&gt;Economic origins of dictatorship and democracy&lt;/em&gt; is a promising starting point. This paper first discusses aspects of the authors’ theoretical framework in order to better understand the circumstances under which revolutionary movements occur in non-democratic states. Second, this paper aims to put their theoretical considerations into an empirical test. Therefore, economic indicators provided by the World Bank &lt;span class=&#34;citation&#34;&gt;(2018)&lt;/span&gt; are discussed in the context of the model.&lt;/p&gt;
+&lt;div id=&#34;the-revolution-constraint&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;1&lt;/span&gt; The Revolution Constraint&lt;/h1&gt;
+&lt;p&gt;Acemoglu and Robinson &lt;span class=&#34;citation&#34;&gt;(2006)&lt;/span&gt; provide a theoretical framework for the analysis of the emergence of democracies and the dissolution of non-democracies from a game theoretical perspective. It implies strategical behavior of social groups with respect to conflicts of interest. Democracy is preferred by the majority of citizens but rejected by the elites. In nondemocracies, no checks on the power of the elites exist. In other words, elites would be eligible to choose the policies that are most beneficial to them (Ibid, 120). Since individual economic incentives determine political attitudes, there would be no redistribution to the poor or to the middle classes. In the terminology of Acemoglu and Robinson’s model the elites, denoted by &lt;span class=&#34;math inline&#34;&gt;\(\delta\)&lt;/span&gt;, would set set tax rate &lt;span class=&#34;math inline&#34;&gt;\(\tau^r\)&lt;/span&gt; equal to &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;However, the extent to which elites can benefit from their political power is limited by the danger of other groups striking, protesting or even trying to overthrow the ruling regime. It follows that the danger of a revolution puts a constraint on the policies of the elites in non-democracies. Acemoglu and Robinson argue that the likelihood of a revolution depends on the citizens utility in terms of their income before and after a successful revolution (Ibid, 121). Let &lt;span class=&#34;math inline&#34;&gt;\(1-\theta\)&lt;/span&gt; denote the total income accruing to the poor population, &lt;span class=&#34;math inline&#34;&gt;\(\bar{y}\)&lt;/span&gt; the average income and &lt;span class=&#34;math inline&#34;&gt;\(1-\delta\)&lt;/span&gt; the share of the total population that belongs to the poor. Then, the income of a poor agent  a revolution is given by &lt;span class=&#34;math display&#34;&gt;\[V^p=y^p=\frac{(1-\theta)\bar{y}}{1-\delta}.\]&lt;/span&gt; It follows that a high value of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;, the share of income held by rich, implies a high level of inequality. In this case, the constraints imposed on the elites are rather binding. Revolutions are on the one hand expensive for the elite who lose their privileges in the existing regime. On the other hand, revolutionary events also mean disorder and destruction, so that the productivity of the economy shrinks. Stated differently, there is a fraction &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; that is destroyed during the revolution so that the rest &lt;span class=&#34;math inline&#34;&gt;\(1-\mu\)&lt;/span&gt; can be distributed among the poor. Hence, a revolution is more attractive when the value of &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; is small. In the post-revolutionary society the utility &lt;span class=&#34;math inline&#34;&gt;\(V^P(R, \mu)\)&lt;/span&gt; of a poor agent, conditional on that fraction &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;, is given by &lt;span class=&#34;math display&#34;&gt;\[ V^P(R, \mu)=\frac{(1-\mu)\bar{y}}{1-\delta}.\]&lt;/span&gt; This indicates, that total disposable income, denoted by &lt;span class=&#34;math inline&#34;&gt;\((1-\mu)\bar{y}\)&lt;/span&gt;, will be divided among the poor population &lt;span class=&#34;math inline&#34;&gt;\(1-\delta\)&lt;/span&gt;. The equations allow to derive the first result for non-democracies: the extent to which the elites can define policies for their benefit is restricted by the potential utility of the poor. In other words, the revolution constraint binds when the potential income of a poor agent in a post-revolutionary society is greater than his current income &lt;span class=&#34;math inline&#34;&gt;\(y^p\)&lt;/span&gt;: &lt;span class=&#34;math display&#34;&gt;\[\frac{(1-\mu)\bar{y}}{1-\delta} &amp;gt; y^p\]&lt;/span&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evidence-from-the-arab-spring&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;2&lt;/span&gt; Evidence from the Arab Spring&lt;/h1&gt;
+&lt;p&gt;It should be emphasized that this result implies that individuals behave strategically under conditions of complete information. This assumption allows the authors, on the one hand, to create a flexible model for predicting the likelihood of a revolution based on economic indicators. On the other hand, the inherent reduction in complexity requires the model to be tested empirically. Would the model have predicted the revolutionary movements of Arab Spring?&lt;/p&gt;
+&lt;div id=&#34;the-case-of-egypt&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.1&lt;/span&gt; The case of Egypt&lt;/h2&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:aggregated-income-share&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/img/post-arab-spring/income-lower-80.jpg&#34; alt=&#34;Aggregated income share held by the lower 80% of the population&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2.1: Aggregated income share held by the lower 80% of the population
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Although the income data for the period before and after the major events of the Arab Spring are only available for Egypt, the World Bank database provides evidence for the hypothesized relation between the distribution of incomes and a countries vulnerability for revolutions. Indeed, Figure &lt;a href=&#34;#fig:aggregated-income-share&#34;&gt;2.1&lt;/a&gt; shows that the income share accruing to the lower 80% of Egypt’s population increased from 58.9% in 2010 to 60.2% in 2012, one year after the major events of the Arab Spring. An economic indicator that is closely related to the income share accruing to different segments of a society is its unemployment rate. It should be noted that according to the literature especially the high unemployment among the youth population accounts for the uprisings of the Arab Spring &lt;span class=&#34;citation&#34;&gt;(Salih 2013, 187)&lt;/span&gt;. In fact, unemployment among the youth population decreased from 33.1% in 2010 to 28.4% in 2013. These developments generally support Acemoglu and Robinson’s idea that revolutions occur when citizens can reasonably assume to gain more than they loose in economic terms.&lt;/p&gt;
+&lt;p&gt;In addition, World Bank data indicate that the income share held by the top 20% diminished in this period from 41.2% to 39.8%. Undoubtedly, these variations might be due to other factors than to the consequences of the revolutionary movements. For example, it is difficult to isolate the effects that account for the growth of income held by the lower 80% of the population. Part of this might be due to the general growth of the country’s economy (see Figure &lt;a href=&#34;#fig:plot-GDP-per-capita&#34;&gt;2.3&lt;/a&gt;). However, the decline in the income share of the top 20% is countered by this general trend. As described in the following, the literature provides a specific explanation for the decline in top incomes.&lt;/p&gt;
+&lt;p&gt;According to Acemoglu, Hassan and Tahoun &lt;span class=&#34;citation&#34;&gt;(2018, 2)&lt;/span&gt; the main roots of protests in Egypt were corruption, benefiting a small group in close relation to Hosni Mubarak’s National Democratic Party (NDP) and repression, with the majority excluded from political participation. Starting with the resignation of president Mubarak on 11 February 2011, Egypt experienced four government changes until July 2013. Mubarak was followed by a military rule until June 2012, when Mohammed Mursi became elected president. This in turn was followed by a second period of military rule starting in 2013. In their paper, the authors show empirically that the economic fortune of politically connected firms to the incumbent regime fades with the changes of the government (Ibid, 9). &lt;!-- [^evidence]  --&gt; Hence, the simultaneous loss of political power of the Mubarak’s regime and its connected economic beneficiaries offers a partial explanation for the observed income decline of the top 20% as indicated by the World Bank data. Together with the improvement in the income of the lower 80%, this shift could be interpreted as economic redistribution in the sense of Acemoglu and Robinson’s model.&lt;/p&gt;
+&lt;p&gt;It should be noted that, according to the model, the occurrence of a revolution, among other criteria, also depends on the policies in the post-revolutionary society. In their game theoretical considerations, Acemoglu and Robinson &lt;span class=&#34;citation&#34;&gt;(2006)&lt;/span&gt; discuss the level of taxation in particular. Moreover, they acknowledge the fact that individuals need to coordinate their actions to impose a substantial threat on the incumbent government. Due to the lack of appropriate data, a simpler version of the model is discussed in this term paper. The next chapter, however, shows that the available indicators provide insightful comparative perspectives. Thereby, I will focus on the apparent differences regarding the extent to which Arab countries were affected by major protests. The aim is to further develop the argument that the general economic situation is useful measure of their vulnerability to revolutions and other forms of social unrest.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;a-comparative-perspective&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.2&lt;/span&gt; A comparative perspective&lt;/h2&gt;
+&lt;p&gt;Algeria, Jordan, Tunisia and Egypt experienced major uprisings &lt;span class=&#34;citation&#34;&gt;(Salih 2013, 184)&lt;/span&gt;. Protests in Algeria against housing shortages and increased food prices forced the government to lift the state of emergency and subsidize food. Demands against the government in Jordan were followed by the appointment of a new prime minister &lt;span class=&#34;citation&#34;&gt;(Rosiny and Richter 2016)&lt;/span&gt;. Protests in Tunisia and Egypt ultimately culminated in a governmental change. In contrast, some Arab countries were not affected by major protest and their regimes remained remarkably stable &lt;span class=&#34;citation&#34;&gt;(Salih 2013, 195)&lt;/span&gt;. These include the five Gulf monarchies of Kuwait, Saudi Arabia, United Arab Emirates, Qatar and Oman. These countries are not geographically separated from countries where major protests took place. However, they differ not only in the extent to which they are affected by the events of Arab Spring, but also in their economic performance. More specifically, Figure &lt;a href=&#34;#fig:plot-unemployment-total&#34;&gt;2.2&lt;/a&gt; allows a distinction to be made between two groups of countries according to the total unemployment rate. Accordingly, the groups also differ in their GDP per capita (Figure &lt;a href=&#34;#fig:plot-GDP-per-capita&#34;&gt;2.3&lt;/a&gt;).&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:plot-unemployment-total&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/img/post-arab-spring/unemployment-total.jpg&#34; alt=&#34;Unemployment, total (% of total labor force)&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2.2: Unemployment, total (% of total labor force)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:plot-GDP-per-capita&#34;&gt;&lt;/span&gt;
+&lt;img src=&#34;/img/post-arab-spring/gdp-per-capita.jpg&#34; alt=&#34;GDP per capita (current US$)&#34;  /&gt;
+&lt;p class=&#34;caption&#34;&gt;
+Figure 2.3: GDP per capita (current US$)
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;As described in the previous chapter, the model of Acemoglu and Robinson implies that the poor impose a revolutionary thread on the elite only with a sufficiently high economic incentive. Accordingly, Egypt and Tunisia, countries with major protests and consequences, are among the countries with lowest GDP per capita and the highest rate of unemployment. The opposite is true for the Gulf monarchies. Interestingly, no protests occurred in Qatar and the Emirates &lt;span class=&#34;citation&#34;&gt;(Rosiny and Richter 2016)&lt;/span&gt;, and those are the countries with the lowest unemployment rate.&lt;/p&gt;
+&lt;p&gt;It is worth mentioning the reaction of the Gulf monarchies to the events of the smaller protests. Take the case of Saudi Arabia, for example. Salih &lt;span class=&#34;citation&#34;&gt;(2013, 196)&lt;/span&gt; points out that King Abdullah reacted with political and economic reforms that “reduced substantially the magnitude of political turmoil in the nation; in the wake of their announcement, the number of protests in the Kingdom”. Following the model of Acemoglu and Robinson &lt;span class=&#34;citation&#34;&gt;(2006, 132)&lt;/span&gt;, elites have the opportunity to use repression or concessions to avoid revolution, even if &lt;span class=&#34;math inline&#34;&gt;\(\mu&amp;lt;\theta\)&lt;/span&gt;. Thus, one could assume that in Saudi Arabia political and economic concessions by the incumbent regime were effective in calming social unrest.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusion&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;3&lt;/span&gt; Conclusion&lt;/h1&gt;
+&lt;p&gt;The question under which conditions regime changes occur and consolidate is interesting both theoretically and empirically. The focus of this paper was to relate Acemoglu and Robinson’s &lt;span class=&#34;citation&#34;&gt;(2006)&lt;/span&gt; theoretical account to empirical findings on economic origins and outcomes of the Arabic Spring. Within the limits of an interpretative approach to the data, this paper provided evidence for Acemoglu and Robinson’s theoretical framework. Economic indicators are indeed a useful measure of a country’s vulnerability for revolutions and other forms of social unrest.&lt;/p&gt;
+&lt;p&gt;&lt;br&gt; &lt;br&gt;&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-acemoglu2006origins&#34;&gt;
+&lt;p&gt;Acemoglu, Daron, and James A. Robinson. 2006. &lt;em&gt;Economic Origins of Dictatorship and Democracy&lt;/em&gt;. Cambridge, UK: Cambridge University Press.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-acemoglu2018arabic&#34;&gt;
+&lt;p&gt;Acemoglu, Daron, Tarek A. Hassan, and Ahmed Tahoun. 2018. “The Power of the Street: Evidence from Egypt’s Arab Spring.” &lt;em&gt;The Review of Financial Studies&lt;/em&gt; 31 (1): 1–42. doi:&lt;a href=&#34;https://doi.org/10.1093/rfs/hhx086&#34;&gt;10.1093/rfs/hhx086&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-rosiny2016&#34;&gt;
+&lt;p&gt;Rosiny, Stephan, and Thomas Richter. 2016. “Der Arabische Frühling und seine Folgen | bpb.” http://www.bpb.de/izpb/238933/der-arabische-fruehling-und-seine-folgen?p=all.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-salih2013&#34;&gt;
+&lt;p&gt;Salih, Kamal Eldin Osman. 2013. “The Roots and Causes of the 2011 Arab Uprisings.” &lt;em&gt;Arab Studies Quarterly&lt;/em&gt; 35 (2): 184–206.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-theeconomist2011&#34;&gt;
+&lt;p&gt;The Economist. 2011. “Where Is the Next Upheaval?” &lt;em&gt;The Economist&lt;/em&gt;, February.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-worldbank2018&#34;&gt;
+&lt;p&gt;World Bank. 2018. “World Development Indicators.” https://data.worldbank.org/indicator.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -79,429 +110,6 @@ rm Untitled.md
       
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0200</pubDate>
-      
-      <guid>/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; makes it easy to create a beautiful website for free using Markdown. Customize anything on your site with widgets, themes, and language packs.&lt;/p&gt;
-
-&lt;p&gt;Follow our easy &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/&#34; target=&#34;_blank&#34;&gt;step by step guide&lt;/a&gt; to learn how to build your own free website with Academic. &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the personal demo&lt;/a&gt; or the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34;&gt;business demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Support development of Academic:
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Key features:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Easily manage various content including homepage, blog posts, publications, talks, and projects&lt;/li&gt;
-&lt;li&gt;Extensible via &lt;strong&gt;color themes&lt;/strong&gt; and &lt;strong&gt;widgets/plugins&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Write in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
-&lt;li&gt;Social/academic network linking, &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, and &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;Multilingual and easy to customize&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic is available in different color themes and font themes.&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-
-  
-  
-  
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-1950s.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-apogee.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-cupcake.png&#34; data-caption=&#34;Cupcake&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-cupcake.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-dark.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-default.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-forest.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-    
-    
-    
-    
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-      
-    
-    
-  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
-  &lt;img src=&#34;/post/getting-started/gallery/theme-ocean.png&#34; alt=&#34;&#34;&gt;
-  &lt;/a&gt;
-  
-
-  
-&lt;/div&gt;
-
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;one-click install using your web browser (recommended)&lt;/li&gt;
-&lt;li&gt;install on your computer using Git with the Command Prompt/Terminal app&lt;/li&gt;
-&lt;li&gt;install on your computer by downloading the ZIP files&lt;/li&gt;
-&lt;li&gt;install on your computer with RStudio&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;quick-install-using-your-web-browser&#34;&gt;Quick install using your web browser&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart&#34; target=&#34;_blank&#34;&gt;Install Academic with Netlify&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Netlify will provide you with a customizable URL to access your new site&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;On GitHub, go to your newly created &lt;code&gt;academic-kickstart&lt;/code&gt; repository and edit &lt;code&gt;config.toml&lt;/code&gt; to personalize your site. Shortly after saving the file, your site will automatically update&lt;/li&gt;
-&lt;li&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-git&#34;&gt;Install with Git&lt;/h3&gt;
-
-&lt;p&gt;Prerequisites:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34;&gt;Download and install Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#quick-install&#34; target=&#34;_blank&#34;&gt;Download and install Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;Fork&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace &lt;code&gt;sourcethemes&lt;/code&gt; with your GitHub username.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Initialize the theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd My_Website
-git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-zip&#34;&gt;Install with ZIP&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract &lt;em&gt;Academic Kickstart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract the &lt;em&gt;Academic theme&lt;/em&gt; to the &lt;code&gt;themes/academic/&lt;/code&gt; folder from the above step&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-rstudio&#34;&gt;Install with RStudio&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;View the guide to installing Academic with RStudio&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;If you installed on your computer, view your new website by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;host it for free using Github Pages&lt;/a&gt; or Netlify (refer to the first installation method). Alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as a university&amp;rsquo;s hosting service).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of updates and check out the &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt; prior to updating your site.&lt;/p&gt;
-
-&lt;p&gt;Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory) and record your current version number.&lt;/p&gt;
-
-&lt;p&gt;By default, Academic is installed as a Git submodule which can be updated by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git submodule update --remote --merge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Check out the update guide&lt;/a&gt; for full instructions and alternative methods.&lt;/p&gt;
-
-&lt;h2 id=&#34;feedback-contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
-
-&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
-
-&lt;p&gt;For support, head over to the &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
-      <link>/post/2015-07-23-r-rmarkdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>/post/2015-07-23-r-rmarkdown/</guid>
-      <description>
-
-
-&lt;div id=&#34;r-markdown&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;R Markdown&lt;/h1&gt;
-&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;You can embed an R code chunk like this:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &amp;lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;including-plots&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Including Plots&lt;/h1&gt;
-&lt;p&gt;You can also embed plots. See Figure &lt;a href=&#34;#fig:pie&#34;&gt;1&lt;/a&gt; for example:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&amp;#39;Sky&amp;#39;, &amp;#39;Sunny side of pyramid&amp;#39;, &amp;#39;Shady side of pyramid&amp;#39;),
-  col = c(&amp;#39;#0292D8&amp;#39;, &amp;#39;#F7EA39&amp;#39;, &amp;#39;#C4B632&amp;#39;),
-  init.angle = -50, border = NA
-)&lt;/code&gt;&lt;/pre&gt;
-&lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:pie&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png&#34; alt=&#34;A fancy pie chart.&#34; width=&#34;672&#34; /&gt;
-&lt;p class=&#34;caption&#34;&gt;
-Figure 1: A fancy pie chart.
-&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </description>
     </item>
     
