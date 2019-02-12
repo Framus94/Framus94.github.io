@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = F)
 
 The term _Arab Spring_ denotes a variety of regime protests, uprisings and armed rebellions, which differ from each other in several respects. On the one hand, they differ in their extent, ranging from local to nationwide activities, and on the other hand in the achievement of different results: from minor state concessions to appease the population, to stronger reactions in which the government was overthrown. Some countries plunged into civil war and others became autocratic regimes. As a result, social unrest in the affected countries varied widely, going along with remarkable differences in how the distribution of political power of economic resources has changed with the events of Arab Spring. How can these differences between countries be explained? 
 
-![Image Credit: [The Economist](https://www.economist.com/taxonomy/term/104/0?page=37) ](/img/post-arab-spring/arab-spring-map.png)
+![Image Credit: [The Economist](https://www.economist.com/briefing/2011/02/24/getting-together) ](/img/post-arab-spring/20110226_fbm945.gif)
 
 In fact, economic aspects were one of the main explanations for the political unrest in Arab Spring, which was used not only by many scholars but also by the media. The Economist's _Shoe Thrower's Index_ is a remarkable example. It has been assumed that the youth population, years of government,
 corruption, GDP per capita and several other indicators measure the vulnerability of Arab countries to revolution. It turned out that the potential for unrest in the Arab world in 2010 was highest in Yemen, Libya, Egypt and Syria, while countries such as Qatar, Kuwait, the United Arab Emirates and Lebanon achieved the lowest values [@theeconomist2011]. Although the index has no theoretical background, its predictions of social unrest are indeed empirically supported, as discussed below.
@@ -41,6 +41,8 @@ Stated differently, there is a fraction $\mu$ that is destroyed during the revol
 $$ V^P(R, \mu)=\frac{(1-\mu)\bar{y}}{1-\delta}.$$
 This indicates, that total disposable income, denoted by $(1-\mu)\bar{y}$, will be divided among the poor population $1-\delta$. The equations allow to derive the first result for non-democracies: the extent to which the elites can define policies for their benefit is restricted by the potential utility of the poor. In other words, the revolution constraint binds when the potential income of a poor agent in a post-revolutionary society is greater than his current income $y^p$: 
 $$\frac{(1-\mu)\bar{y}}{1-\delta} > y^p$$
+
+<br>
 
 # Evidence from the Arab Spring
 
@@ -94,6 +96,9 @@ Following the model of Acemoglu and Robinson [-@acemoglu2006origins, 132], elite
 
 The question under which conditions regime changes occur and consolidate is interesting both theoretically and empirically. The focus of this paper was to relate Acemoglu and Robinson's [-@acemoglu2006origins] theoretical account to empirical findings on economic origins and outcomes of the Arabic Spring. Within the limits of an interpretative approach to the data, this paper provided evidence for Acemoglu and Robinson's theoretical framework. Economic indicators are indeed a useful measure of a country's vulnerability for revolutions and other forms of social unrest.
 
-<br> <br>
+<br> 
+Data and code are provided in my GitHub [repository](https://github.com/Framus94/PoliticalEconomy). 
+<br>
+<br>
 
 
