@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>World Bank Data on David Broska</title>
-    <link>/tags/world-bank-data/</link>
+    <link>https://david-broska.netlify.com/tags/world-bank-data/</link>
     <description>Recent content in World Bank Data on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/world-bank-data/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://david-broska.netlify.com/tags/world-bank-data/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Economic Origins and Outcomes of the Arab Spring</title>
-      <link>/post/arab-spring/arab-spring-origins-outcomes/</link>
+      <link>https://david-broska.netlify.com/post/arab-spring/arab-spring-origins-outcomes/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/arab-spring/arab-spring-origins-outcomes/</guid>
+      <guid>https://david-broska.netlify.com/post/arab-spring/arab-spring-origins-outcomes/</guid>
       <description>1 The Revolution Constraint2 Evidence from the Arab Spring2.1 The case of Egypt2.2 A comparative perspective3 ConclusionThe term Arab Spring denotes a variety of regime protests, uprisings and armed rebellions, which differ from each other in several respects. On the one hand, they differ in their extent, ranging from local to nationwide activities, and on the other hand in the achievement of different results: from minor state concessions to appease the population, to stronger reactions in which the government was overthrown.</description>
     </item>
     

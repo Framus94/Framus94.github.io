@@ -4,7 +4,15 @@
     
     <url>
     
-      <loc>/post/arab-spring/arab-spring-origins-outcomes/</loc>
+      <loc>https://david-broska.netlify.com/post/artist-careers/path-dependencies/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/post/arab-spring/arab-spring-origins-outcomes/</loc>
       <lastmod>2019-02-11T00:00:00+00:00</lastmod>
     </url>
     
@@ -12,55 +20,14 @@
     
     <url>
     
-      <loc>/privacy/</loc>
-      <lastmod>2018-06-28T00:00:00+02:00</lastmod>
+      <loc>https://david-broska.netlify.com/author/admin/</loc>
     </url>
     
   
     
     <url>
     
-      <loc>/author/admin/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/arab-spring/</loc>
-      <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/author/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/</loc>
+      <loc>https://david-broska.netlify.com/tags/arab-spring/</loc>
       <lastmod>2019-02-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -69,15 +36,7 @@
     
     <url>
     
-      <loc>/post/</loc>
-      <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
+      <loc>https://david-broska.netlify.com/author/</loc>
       <priority>0</priority>
     </url>
     
@@ -85,7 +44,66 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>https://david-broska.netlify.com/authors/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/tags/careers/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/post/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/publication_types/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/tags/r/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/tags/</loc>
       <lastmod>2019-02-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -94,7 +112,16 @@
     
     <url>
     
-      <loc>/tags/</loc>
+      <loc>https://david-broska.netlify.com/tags/visual-arts/</loc>
+      <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/tags/world-bank-data/</loc>
       <lastmod>2019-02-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -103,16 +130,7 @@
     
     <url>
     
-      <loc>/tags/world-bank-data/</loc>
-      <lastmod>2019-02-11T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/authors/admin/</loc>
+      <loc>https://david-broska.netlify.com/authors/admin/</loc>
       <priority>0</priority>
     </url>
     

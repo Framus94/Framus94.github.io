@@ -1,0 +1,196 @@
+---
+title: Path Dependencies in Careers of Visual Artists
+summary: "How persistent are initial differences?"
+author: ~
+bibliography: bib.bib
+date: '2019-07-01'
+slug: path-dependencies
+categories: []
+tags:
+  - R
+  - Careers
+  - Visual Arts
+image:
+  caption: ''
+  focal_point: ''
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+---
+
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = F)
+library(leaflet); library(leaflet.extras); library(dplyr); library(kableExtra)
+```
+
+
+# Introduction 
+
+This article analyzes how social hierarchies between visual artists arise and persist. Specifically, I draw on an empirical strategy proposed by @fraiberger2018 to distinguish successful and less successful careers. The authors analyze artist careers as sequences of exhibition participations in museums and galleries of higher or lower prestige. They observe a path dependency between the artists' first exhibitions and the further course of their careers.
+By analyzing the chances and consequences of accessing high-profile institutions, they contribute to our understanding of how inequalities emerge. Hence, a detailed review of the study by @fraiberger2018 is certainly worthwhile.
+
+At the same time, the reader of their article can find only a few indications of the theoretical justification of their analytical approach.
+Therefore, I will first explain why their concept is suitable for the analysis of artists' careers. Then, I will examine whether the authors' results can be reproduced using a data set I have compiled from different sources. Thereby, I will draw particular attention to the observed path dependencies and differences in recognition depending on the geographic origin of the artists.
+
+# Concept {#idea}
+
+The idea is to use the information that an artist's works were first exhibited in a venue $i$ and then in $j$. From a network analytical perspective, this creates a tie between the two exhibition places. The important point is that this relation has meaningful epistemological properties.
+I consider the following two aspects of these ties to be crucial.
+
+1. _Revealing the recognition of artists:_ To which exhibition venues artists have access is an indicator of their artistic recognition.
+The premise is that exhibition venues are not equally selective. In other words, artists are required to have already exhibited in certain other places in order to present their works in the most selective and sought-after locations. In this sense, being invited to an exhibition in venues of higher or lower status indicates the significance that is attributed to the artist.
+
+2. _Revealing the prestige of venues:_ The relation between venues, that is, an artist's works were first shown in $i$ and then in $j$, is also an indicator of the significance attributed to the venues.
+It is reasonable to assume that artists rather choose to exhibit in high-profile than in low-profile venues. Therefore, systematic movements towards specific locations reveal the venues artists consider to be crucial for their careers.
+Similarly, gallerists, curators and museum representatives are more likely to prefer cooperating with high-status intermediaries. In the case of gallerists, for example, it is beneficial to exchange artworks with museums since this enhances the value of their artworks [@yogev2010, 523].
+From the perspective of the museum representatives, the exchange of artworks can be interpreted as status signals. First, the significance of a museum manifests in its ability from which institutions it can acquire exhibition pieces. Second, the request of an important institute also increases the visibility of the museum that provides the objects [@artmarketstudies2017]. Lenders, for example, are usually mentioned in the acknowledgments for the exhibition.
+Hence, we would expect artworks to be moved towards venues that intermediaries consider to be of particular importance, for the value enhancement of their objects or their institutes.
+
+The empirical strategy derived from these considerations is illustrated in figure \@ref(fig:plot-example-graph). In order to measure the status of exhibition venues, I define a coexhibition network in which the nodes represent the venues connected by ties which, in turn, denote the artworks moving between these locations. Venues that receive comparatively many choices will have a high degree centrality.
+As mentioned above, however, some venues might only be reachable for artists if their works have been shown at other important places before, i.e. venues which also receive many positive choices.
+
+Eigenvector centrality is a network measure that reflects this reasoning. A node's centrality will be proportional to the sum of the degree centralities of the nodes to which it is connected. These nodes, in turn, derive their centrality score from the degree centralities of their neighbors, and so forth [@bonacich1987, 1171].
+
+Specifically, I compute the eigenvector centrality for an undirected network. Arguably, the ties imply a chronological order and can thus be understood as directional. However, consider node 6 on the left side of figure \@ref(fig:plot-example-graph). It has a centrality score of 0 although the ties point toward other interconnected nodes. If exhibition venues attain status also through the places in which they can have their artworks represented, this measure seems not to be appropriate. In accordance with @fraiberger2018, I will instead compute the eigenvector centrality for the undirected network.
+
+```{r plot-example-graph, fig.align = "center", fig.cap="Eigenvector centrality computed for a directed and an undirected random network"}
+knitr::include_graphics("/img/post-artist-careers/figures/graph_example.png")
+```
+
+# Data {#data}
+
+In order to pursue the research interest described above, I use data compiled from [artist-info.com](https://www.artist-info.com/). The dataset contains details on which artists have exhibited at which locations and at what point in time. The record was supplemented with spatial data retrieved by the [Google Maps API](https://developers.google.com/maps/documentation/).
+<!-- Figure \@ref(fig:exhibitions-per-year) visualizes the number of exhibitions and active exhibition places present in the data set. -->
+
+```{r exhibitions-per-year, fig.cap="Exhibitions per year", eval = F}
+knitr::include_graphics("/img/post-artist-careers/figures/exhibitions_and_places_yr.png")
+```
+
+It turns out that the data collected by artist-info.com is not distributed equally across countries. The map below shows that most exhibition venues, depicted by the red dots, are concentrated in Europe and North America. The birthplaces of the artists are illustrated by the blue points.
+The absence of the data for the other continents reflects an important aspect to be taken into account when analyzing the given data. Since the exhibitions were not collected by random sampling any conclusions might be affected by selection bias. Bearing this in fact in mind, I will present the results of analyzing artist careers in the next section.
+
+Prior to this, feel free to explore the map. The data set might cover exhibition venues or birthplaces of artists close to you. You can use the search tool in the left pane of the map for zooming to your location.
+
+```{r plot-leaflet}
+# read in function to create the map
+source("leaflet_map/world_map.R")
+
+# read in data to populate the map
+nodes <- readRDS("leaflet_map/rds/nodes.Rds")
+artists <- readRDS("leaflet_map/rds/artists.Rds")
+
+# plot map
+world_map(nodes, artists)
+```
+
+<br>
+
+# Path dependencies {#path-dependencies}
+
+The analytical strategy described in the first section allows mapping the career of an artist on a two-dimensional space. Thereby, the x-axis denotes the sequence of exhibition participations whereas the y-axis indicates the status of the venue in the year of the exhibition.
+In accordance with @fraiberger2018, I calculated the percentile rank on the eigenvector centrality for each venue and each year. For example, a venue in the 80th percentile features an eigenvector centrality that is larger or equal to the centrality of 80% of the locations in a given year. In order to show that starting a career at different levels in the status order of exhibition venues has far-reaching implications for the artists' further course of careers, @fraiberger2018 divide the artists in their study into three groups.
+This is illustrated in figure \@ref(fig:plot-example-careers). It three careers of artists that have either a high, moderate and low initial reputation. That is, the artists' first five exhibitions took place, on average, in the top 20%, the lower 40% or the intermediate percentiles of venues.
+
+```{r plot-example-careers, fig.align = "center", fig.cap="Example careers of high, moderate and low initial reputation"}
+knitr::include_graphics("/img/post-artist-careers/figures/plot_3_careers.png")
+```
+
+Will we also observe path dependencies when applying the same methods to a data set compiled from different sources? First, consider the summary statistics provided in table \@ref(tab:summary-stats). In fact, artists with a high initial recognition do not only exhibit at more prestigious venues overall. Their careers also feature more exhibitions than those of artists who began exhibiting in low-profile venues. On the one hand, this may be due to the fact that low initial artists have ceased exhibiting. On the other hand, as mentioned above, the lack of exhibition data for this group could be due to the fact that the data set focuses on the more interesting cases.
+
+```{r summary-stats}
+summary_statistics <- readRDS("results/rds/summary_stats.Rds")
+
+summary_statistics %>%
+  dplyr::select(initial_rep_fraib, n_artists, n_exh, avg_exhs_artist, avg_prestige, sd) %>% 
+  dplyr::mutate_if(is.numeric, ~ round(., 1)) %>% 
+  dplyr::mutate(initial_rep_fraib = stringr::str_extract(initial_rep_fraib, "[a-z]+")) %>% 
+  knitr::kable(format = "html", 
+               col.names = c("Initial Recognition", "Artists", "Exhibitions", "Average Exhibitions", "Average Prestige", "Standard Deviation"),
+               caption = "Summary statistics",
+               align = c("l", rep("c", 5))) %>% 
+  kableExtra::kable_styling(position = "center") %>% 
+  kableExtra::column_spec(1, bold = T)
+```
+
+Let us consider next to what extent the prestige of artists' last five exhibition venues depends on the status of their first five exhibition places. Fraiberger et al. [-@fraiberger2018, 6] use an alluvial diagram to illustrate the fraction of artists exhibiting in either the top 20%, lower 40% or intermediate percentiles at the beginning and the end of their careers. An equivalent representation is a transition matrix given by table \@ref(tab:transition-matrix).
+
+```{r transition-matrix}
+tmatrix_p <- readRDS("results/rds/transition_matrix.Rds")
+
+# output as kable
+tmatrix_p %>%
+  cbind(rep("Initial", 3), # initialize column to collapse with collapse_rows
+        rownames(.) %>% stringr::str_remove(" initial"), # initialize column with rownames
+        .) %>% # finally the table object
+
+  knitr::kable(x = ., format = "html",
+               align = c(rep("l",2) , rep("c", 3)),
+               booktabs = T,
+               row.names = F,
+               col.names = colnames(.) %>% stringr::str_remove(" final"),
+               caption = "Transitions from the artists' first to last five exhibitions") %>%
+  kableExtra::column_spec(1:2, bold = T) %>%
+  kableExtra::kable_styling(position = "center", full_width = F) %>%
+  kableExtra::collapse_rows(columns = 1:2) %>%
+  kableExtra::add_header_above(c("", "", "Final" = 3))
+```
+
+It turns out that `r tmatrix_p["high initial", "high final"]`% of the artists who began their careers in the top 20% on average, presented their artworks also in the most emblematic institutions during their last five exhibitions.
+In addition, merely `r tmatrix_p["high initial", "low final"]`% of the artists that exhibited in most prestigious venues in the first place, finish their careers in the lowest 40% of exhibition venues. This is the most unlikely of all transitions.
+Hence, there is evidence of high initial positions to be reproduced throughout the artists' careers.
+
+At the same time, the transition matrix shows that artists can improve their low initial positions over the course of their careers. Arguably, the probability of being both in a low initial and low final position is no less than `r tmatrix_p["low initial", "low final"]`%. However, `r tmatrix_p["low initial", "moderate final"]`% of these artists reach a moderate position at the end of their careers. Nonetheless, the possibility of ascending appears to be limited to the next higher position. Remarkably, no more than `r tmatrix_p["low initial", "high final"]`% of the artists with low initial recognition attain access to most prestigious venues.
+
+Figure \@ref(fig:initial-final-recognition-countries) shows how the average prestige of the venues in the first and last five exhibitions differs according to the artists' country of birth.
+If the artists were in the same position as at the beginning of their career, the point would be located on the 45° line. In most cases, however, their recognition declines when comparing both career phases.
+As noted in section \@ref(data), all conclusions regarding geographical differences are restricted by the limited number of observations. However, with regard to Germany and the USA, for which a comparatively high amount of data is available, we should acknowledge a difference. On average, US American artists tend to start and end their careers in more prestigious places.
+
+```{r initial-final-recognition-countries, fig.cap="Average prestige of venues according to the artist's countries of origin"}
+knitr::include_graphics("/img/post-artist-careers/figures/init_final_country.png")
+```
+
+Finally, we might be interested in reviewing the entire course of their careers. Figure \@ref(fig:avg-careers-years) illustrates the average prestige of the venues for each year of the artists' careers. Thereby, the population of artists has been restricted to those who began their career in 1975. Some of those continued to exhibit until 2015 so that their documented careers spans 40 years. For each of the three groups, the average percentile of the exhibition venues was computed for each year. Accordingly, the left pane of figure \@ref(fig:avg-careers-years) shows the average trajectories of those artists who _began_ their career, on average, in the top 20%, the lowest 40% and the intermediate percentiles. Remarkably, the initial differences diminish over time.
+This corresponds to the finding from figure \@ref(fig:initial-final-recognition-countries), namely that artists from most countries end their careers in lower positions compared to their starting positions.
+
+Figure \@ref(fig:avg-careers-years)b yields a similar picture. For this graphic, the groups of artists were defined based on the average prestige of their _last_ five exhibition venues. Although the groups are composed of different individuals, we can confirm that a superior final position requires, on average, also an improved starting position.
+
+```{r avg-careers-years, fig.cap="Average careers of high, moderate initial and final recognition"}
+knitr::include_graphics("/img/post-artist-careers/figures/plot_career_years.png")
+```
+
+# Conclusion
+
+This article reproduced the observation of @fraiberger2018, namely that higher positions at the beginning of a career are associated with higher positions in the further course of artists' careers. Nevertheless, initial differences in artistic recognition become smaller the longer the artists continue to exhibit. Further research might uncover whether initial differences are associated also with different career durations. Artists with a low initial recognition may cease exhibiting earlier. Similarly, artists who do not originate from Europe and the US may show a higher dropout rate. As no particular statistic was derived for this article, more sophisticated methods might further improve our understanding of careers in the visual arts.
+
+<!-- - affiliations, i.e. the movements of artists between exhibition venues, have epistemologic implications in this study -->
+<!--   - revealing the status artists -->
+<!--     - by the fact which works of artists they grant access the indicate the status of the artists assuming they have a different selectivity which they do due to accountabily with respect to different audiences -->
+<!--   - revealing the prestiguous venues:  -->
+<!--     - movements of artists: artists engage in an exhibition project at a venue (Adrian Piper) -->
+<!--     - movements of objects: artworks will be sent to another venue as loan. curators choose venues for a cooperation which they consider prestigious -->
+<!--   - drawback of exhibition data is not be able to disentagle -->
+
+<!-- # Geography {#geography} -->
+
+<!-- Analyse geographical differences  -->
+<!-- - length of career / dropout (only 14% of the artists beginning in the lower 40% of the exhibition venues have a trajectory documented for longer than 10 years)  -->
+<!-- -  -->
+
+```{r density-carrer-phase, out.width = "90%", eval = F}
+knitr::include_graphics("results/figures/")
+```
+
+```{r plot-prestige-densities-continent, out.width = "90%", eval = F}
+knitr::include_graphics("/img/post-artist-careers/figures/prestige_continent.png")
+```
+
+
+```{r plot-career-length, out.width="90%", eval = F}
+knitr::include_graphics("/img/post-artist-careers/figures/plot_avg_career_length.png")
+```
+
+<br> 
+The R code is provided in my GitHub [repository](https://github.com/Framus94/AC). 
+<br>
+<br>
