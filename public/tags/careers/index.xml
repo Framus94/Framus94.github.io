@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Careers on David Broska</title>
-    <link>https://david-broska.netlify.com/tags/careers/</link>
+    <link>/tags/careers/</link>
     <description>Recent content in Careers on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://david-broska.netlify.com/tags/careers/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/careers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Path Dependencies in Careers of Visual Artists</title>
-      <link>https://david-broska.netlify.com/post/artist-careers/path-dependencies/</link>
+      <link>/post/artist-careers/path-dependencies/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://david-broska.netlify.com/post/artist-careers/path-dependencies/</guid>
+      <guid>/post/artist-careers/path-dependencies/</guid>
       <description>1 Introduction2 Concept3 Data4 Path dependencies5 Conclusion1 IntroductionThis article analyzes how social hierarchies between visual artists arise and persist. Specifically, I draw on an empirical strategy proposed by Fraiberger et al. (2018) to distinguish successful and less successful careers. The authors analyze artist careers as sequences of exhibition participations in museums and galleries of higher or lower prestige.</description>
     </item>
     

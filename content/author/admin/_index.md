@@ -1,21 +1,23 @@
 ---
 authors:
 - admin
-bio: My research interests include the sociology of arts, markets and careers.
+bio: Working at the intersection of the sociology of inequalities and valuation, I am interested in how status differences explain other forms of inequalities.
 education:
   courses:
-  - course: Bachelor in Sociology, Politics & Economics
+  - course: MSc Social Research Methods
+    institution: London School of Economics
+  - course: BA Sociology, Politics & Economics
     institution: Zeppelin University
-email: "d.broska@zeppelin-university.net"
+email: "d.s.broska@lse.ac.uk"
 interests:
 - Sociology
-- Data Analysis
-- Programming
+- Social Inequalities
+- Computational Social Science
 name: David Broska
 organizations:
-- name: Zeppelin University
-  url: "https://www.zu.de/"
-role: Student of Sociology, Politics & Economics
+- name: London School of Economics
+  url: "http://www.lse.ac.uk/"
+role: Student in Social Research Methods
 social:
 - icon: envelope
   icon_pack: fas
@@ -32,8 +34,10 @@ user_groups:
 - Visitors
 ---
 
-I am a final year undergraduate student with a keen interest in sociology, statistics and the analysis of social inequalities. I am currently working as an research assistant on the processing of Pierre Bourdieu's photo archive, which was created during his field research in Algeria in the 1960s. Previously, I worked as a data analyst in private companies, but also as a trainee at EUROSTAT, the statistical office of the European Commission.
+Working at the intersection of the sociology of inequalities and valuation, I am interested in how status differences explain other forms of inequalities. 
+In a current project, I use methods from computational social sciences to understand how processes of status formation affect the life courses of visual artists.
 
-The unifying theme of my research is the translation of theories from the social sciences into an empirical design. The tension that arises here poses exciting and challenging questions.
-Have a look at my [blog](#posts) for some of my projects. 
+Before joining the London School of Economics to study Social Research Methods, I completed my undergraduate studies at Zeppelin University in Sociology, Politics & Economics. 
+Also, I worked as a data analyst in private companies and as a trainee at EUROSTAT, the statistical office of the European Commission.
 
+From time to time I work on smaller projects that spark my interest. Feel free to have a look at my [blog](#posts).

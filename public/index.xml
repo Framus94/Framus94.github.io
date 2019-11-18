@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>David Broska on David Broska</title>
-    <link>https://david-broska.netlify.com/</link>
+    <link>/</link>
     <description>Recent content in David Broska on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -11,31 +11,31 @@
     
     <item>
       <title>Path Dependencies in Careers of Visual Artists</title>
-      <link>https://david-broska.netlify.com/post/artist-careers/path-dependencies/</link>
+      <link>/post/artist-careers/path-dependencies/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://david-broska.netlify.com/post/artist-careers/path-dependencies/</guid>
+      <guid>/post/artist-careers/path-dependencies/</guid>
       <description>
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://david-broska.netlify.com/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://david-broska.netlify.com/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet-providers/leaflet-providers.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet-easybutton/easy-button.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet-easybutton/easy-button.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/leaflet-easybutton/EasyButton-binding.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://david-broska.netlify.com/rmarkdown-libs/ionicons/ionicons.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/fuse_js/fuse_js-prod.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://david-broska.netlify.com/rmarkdown-libs/lfx-search/lfx-search-prod.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/lfx-search/lfx-search-prod.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/lfx-search/lfx-search-bindings.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://david-broska.netlify.com/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leaflet/leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leafletfix/leafletfix.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/rstudio_leaflet/rstudio_leaflet.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-binding/leaflet.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-providers/leaflet-providers.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-providers-plugin/leaflet-providers-plugin.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/leaflet-easybutton/easy-button.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-easybutton/easy-button.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/leaflet-easybutton/EasyButton-binding.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/ionicons/ionicons.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/fuse_js/fuse_js-prod.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/lfx-search/lfx-search-prod.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/lfx-search/lfx-search-prod.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/lfx-search/lfx-search-bindings.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
 
 &lt;div id=&#34;TOC&#34;&gt;
 &lt;ul&gt;
@@ -63,7 +63,7 @@
 &lt;p&gt;Eigenvector centrality is a network measure that reflects this reasoning. A node’s centrality will be proportional to the sum of the degree centralities of the nodes to which it is connected. These nodes, in turn, derive their centrality score from the degree centralities of their neighbors, and so forth &lt;span class=&#34;citation&#34;&gt;(Bonacich 1987, 1171)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;Specifically, I compute the eigenvector centrality for an undirected network. Arguably, the ties imply a chronological order and can thus be understood as directional. However, consider node 6 on the left side of figure &lt;a href=&#34;#fig:plot-example-graph&#34;&gt;2.1&lt;/a&gt;. It has a centrality score of 0 although the ties point toward other interconnected nodes. If exhibition venues attain status also through the places in which they can have their artworks represented, this measure seems not to be appropriate. In accordance with &lt;span class=&#34;citation&#34;&gt;Fraiberger et al. (2018)&lt;/span&gt;, I will instead compute the eigenvector centrality for the undirected network.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:plot-example-graph&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-artist-careers/figures/graph_example.png&#34; alt=&#34;Eigenvector centrality computed for a directed and an undirected random network&#34;  /&gt;
+&lt;img src=&#34;/img/post-artist-careers/figures/graph_example.png&#34; alt=&#34;Eigenvector centrality computed for a directed and an undirected random network&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2.1: Eigenvector centrality computed for a directed and an undirected random network
 &lt;/p&gt;
@@ -82,7 +82,7 @@ Figure 2.1: Eigenvector centrality computed for a directed and an undirected ran
 &lt;h1&gt;&lt;span class=&#34;header-section-number&#34;&gt;4&lt;/span&gt; Path dependencies&lt;/h1&gt;
 &lt;p&gt;The analytical strategy described in the first section allows mapping the career of an artist on a two-dimensional space. Thereby, the x-axis denotes the sequence of exhibition participations whereas the y-axis indicates the status of the venue in the year of the exhibition. In accordance with &lt;span class=&#34;citation&#34;&gt;Fraiberger et al. (2018)&lt;/span&gt;, I calculated the percentile rank on the eigenvector centrality for each venue and each year. For example, a venue in the 80th percentile features an eigenvector centrality that is larger or equal to the centrality of 80% of the locations in a given year. In order to show that starting a career at different levels in the status order of exhibition venues has far-reaching implications for the artists’ further course of careers, &lt;span class=&#34;citation&#34;&gt;Fraiberger et al. (2018)&lt;/span&gt; divide the artists in their study into three groups. This is illustrated in figure &lt;a href=&#34;#fig:plot-example-careers&#34;&gt;4.1&lt;/a&gt;. It three careers of artists that have either a high, moderate and low initial reputation. That is, the artists’ first five exhibitions took place, on average, in the top 20%, the lower 40% or the intermediate percentiles of venues.&lt;/p&gt;
 &lt;div class=&#34;figure&#34; style=&#34;text-align: center&#34;&gt;&lt;span id=&#34;fig:plot-example-careers&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-artist-careers/figures/plot_3_careers.png&#34; alt=&#34;Example careers of high, moderate and low initial reputation&#34;  /&gt;
+&lt;img src=&#34;/img/post-artist-careers/figures/plot_3_careers.png&#34; alt=&#34;Example careers of high, moderate and low initial reputation&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 4.1: Example careers of high, moderate and low initial reputation
 &lt;/p&gt;
@@ -262,7 +262,7 @@ high
 &lt;p&gt;At the same time, the transition matrix shows that artists can improve their low initial positions over the course of their careers. Arguably, the probability of being both in a low initial and low final position is no less than 21.8%. However, 73.1% of these artists reach a moderate position at the end of their careers. Nonetheless, the possibility of ascending appears to be limited to the next higher position. Remarkably, no more than 5% of the artists with low initial recognition attain access to most prestigious venues.&lt;/p&gt;
 &lt;p&gt;Figure &lt;a href=&#34;#fig:initial-final-recognition-countries&#34;&gt;4.2&lt;/a&gt; shows how the average prestige of the venues in the first and last five exhibitions differs according to the artists’ country of birth. If the artists were in the same position as at the beginning of their career, the point would be located on the 45° line. In most cases, however, their recognition declines when comparing both career phases. As noted in section &lt;a href=&#34;#data&#34;&gt;3&lt;/a&gt;, all conclusions regarding geographical differences are restricted by the limited number of observations. However, with regard to Germany and the USA, for which a comparatively high amount of data is available, we should acknowledge a difference. On average, US American artists tend to start and end their careers in more prestigious places.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:initial-final-recognition-countries&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-artist-careers/figures/init_final_country.png&#34; alt=&#34;Average prestige of venues according to the artist&#39;s countries of origin&#34;  /&gt;
+&lt;img src=&#34;/img/post-artist-careers/figures/init_final_country.png&#34; alt=&#34;Average prestige of venues according to the artist&#39;s countries of origin&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 4.2: Average prestige of venues according to the artist’s countries of origin
 &lt;/p&gt;
@@ -270,7 +270,7 @@ Figure 4.2: Average prestige of venues according to the artist’s countries of 
 &lt;p&gt;Finally, we might be interested in reviewing the entire course of their careers. Figure &lt;a href=&#34;#fig:avg-careers-years&#34;&gt;4.3&lt;/a&gt; illustrates the average prestige of the venues for each year of the artists’ careers. Thereby, the population of artists has been restricted to those who began their career in 1975. Some of those continued to exhibit until 2015 so that their documented careers spans 40 years. For each of the three groups, the average percentile of the exhibition venues was computed for each year. Accordingly, the left pane of figure &lt;a href=&#34;#fig:avg-careers-years&#34;&gt;4.3&lt;/a&gt; shows the average trajectories of those artists who &lt;em&gt;began&lt;/em&gt; their career, on average, in the top 20%, the lowest 40% and the intermediate percentiles. Remarkably, the initial differences diminish over time. This corresponds to the finding from figure &lt;a href=&#34;#fig:initial-final-recognition-countries&#34;&gt;4.2&lt;/a&gt;, namely that artists from most countries end their careers in lower positions compared to their starting positions.&lt;/p&gt;
 &lt;p&gt;Figure &lt;a href=&#34;#fig:avg-careers-years&#34;&gt;4.3&lt;/a&gt;b yields a similar picture. For this graphic, the groups of artists were defined based on the average prestige of their &lt;em&gt;last&lt;/em&gt; five exhibition venues. Although the groups are composed of different individuals, we can confirm that a superior final position requires, on average, also an improved starting position.&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:avg-careers-years&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-artist-careers/figures/plot_career_years.png&#34; alt=&#34;Average careers of high, moderate initial and final recognition&#34;  /&gt;
+&lt;img src=&#34;/img/post-artist-careers/figures/plot_career_years.png&#34; alt=&#34;Average careers of high, moderate initial and final recognition&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 4.3: Average careers of high, moderate initial and final recognition
 &lt;/p&gt;
@@ -311,10 +311,10 @@ Figure 4.3: Average careers of high, moderate initial and final recognition
     
     <item>
       <title>Economic Origins and Outcomes of the Arab Spring</title>
-      <link>https://david-broska.netlify.com/post/arab-spring/arab-spring-origins-outcomes/</link>
+      <link>/post/arab-spring/arab-spring-origins-outcomes/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://david-broska.netlify.com/post/arab-spring/arab-spring-origins-outcomes/</guid>
+      <guid>/post/arab-spring/arab-spring-origins-outcomes/</guid>
       <description>
 
 &lt;div id=&#34;TOC&#34;&gt;
@@ -330,7 +330,7 @@ Figure 4.3: Average careers of high, moderate initial and final recognition
 
 &lt;p&gt;The term &lt;em&gt;Arab Spring&lt;/em&gt; denotes a variety of regime protests, uprisings and armed rebellions, which differ from each other in several respects. On the one hand, they differ in their extent, ranging from local to nationwide activities, and on the other hand in the achievement of different results: from minor state concessions to appease the population, to stronger reactions in which the government was overthrown. Some countries plunged into civil war and others became autocratic regimes. As a result, social unrest in the affected countries varied widely, going along with remarkable differences in how the distribution of political power of economic resources has changed with the events of Arab Spring. How can these differences between countries be explained?&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-arab-spring/20110226_fbm945.gif&#34; alt=&#34;Image Credit: The Economist&#34; /&gt;
+&lt;img src=&#34;/img/post-arab-spring/20110226_fbm945.gif&#34; alt=&#34;Image Credit: The Economist&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;Image Credit: &lt;a href=&#34;https://www.economist.com/briefing/2011/02/24/getting-together&#34;&gt;The Economist&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;In fact, economic aspects were one of the main explanations for the political unrest in Arab Spring, which was used not only by many scholars but also by the media. The Economist’s &lt;em&gt;Shoe Thrower’s Index&lt;/em&gt; is a remarkable example. It has been assumed that the youth population, years of government, corruption, GDP per capita and several other indicators measure the vulnerability of Arab countries to revolution. It turned out that the potential for unrest in the Arab world in 2010 was highest in Yemen, Libya, Egypt and Syria, while countries such as Qatar, Kuwait, the United Arab Emirates and Lebanon achieved the lowest values &lt;span class=&#34;citation&#34;&gt;(The Economist 2011)&lt;/span&gt;. Although the index has no theoretical background, its predictions of social unrest are indeed empirically supported, as discussed below.&lt;/p&gt;
@@ -347,7 +347,7 @@ Figure 4.3: Average careers of high, moderate initial and final recognition
 &lt;div id=&#34;the-case-of-egypt&#34; class=&#34;section level2&#34;&gt;
 &lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.1&lt;/span&gt; The case of Egypt&lt;/h2&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:aggregated-income-share&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-arab-spring/income-lower-80.jpg&#34; alt=&#34;Aggregated income share held by the lower 80% of the population&#34;  /&gt;
+&lt;img src=&#34;/img/post-arab-spring/income-lower-80.jpg&#34; alt=&#34;Aggregated income share held by the lower 80% of the population&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2.1: Aggregated income share held by the lower 80% of the population
 &lt;/p&gt;
@@ -361,13 +361,13 @@ Figure 2.1: Aggregated income share held by the lower 80% of the population
 &lt;h2&gt;&lt;span class=&#34;header-section-number&#34;&gt;2.2&lt;/span&gt; A comparative perspective&lt;/h2&gt;
 &lt;p&gt;Algeria, Jordan, Tunisia and Egypt experienced major uprisings &lt;span class=&#34;citation&#34;&gt;(Salih 2013, 184)&lt;/span&gt;. Protests in Algeria against housing shortages and increased food prices forced the government to lift the state of emergency and subsidize food. Demands against the government in Jordan were followed by the appointment of a new prime minister &lt;span class=&#34;citation&#34;&gt;(Rosiny and Richter 2016)&lt;/span&gt;. Protests in Tunisia and Egypt ultimately culminated in a governmental change. In contrast, some Arab countries were not affected by major protest and their regimes remained remarkably stable &lt;span class=&#34;citation&#34;&gt;(Salih 2013, 195)&lt;/span&gt;. These include the five Gulf monarchies of Kuwait, Saudi Arabia, United Arab Emirates, Qatar and Oman. These countries are not geographically separated from countries where major protests took place. However, they differ not only in the extent to which they are affected by the events of Arab Spring, but also in their economic performance. More specifically, Figure &lt;a href=&#34;#fig:plot-unemployment-total&#34;&gt;2.2&lt;/a&gt; allows a distinction to be made between two groups of countries according to the total unemployment rate. Accordingly, the groups also differ in their GDP per capita (Figure &lt;a href=&#34;#fig:plot-GDP-per-capita&#34;&gt;2.3&lt;/a&gt;).&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:plot-unemployment-total&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-arab-spring/unemployment-total.jpg&#34; alt=&#34;Unemployment, total (% of total labor force)&#34;  /&gt;
+&lt;img src=&#34;/img/post-arab-spring/unemployment-total.jpg&#34; alt=&#34;Unemployment, total (% of total labor force)&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2.2: Unemployment, total (% of total labor force)
 &lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&#34;figure&#34;&gt;&lt;span id=&#34;fig:plot-GDP-per-capita&#34;&gt;&lt;/span&gt;
-&lt;img src=&#34;https://david-broska.netlify.com/img/post-arab-spring/gdp-per-capita.jpg&#34; alt=&#34;GDP per capita (current US$)&#34;  /&gt;
+&lt;img src=&#34;/img/post-arab-spring/gdp-per-capita.jpg&#34; alt=&#34;GDP per capita (current US$)&#34;  /&gt;
 &lt;p class=&#34;caption&#34;&gt;
 Figure 2.3: GDP per capita (current US$)
 &lt;/p&gt;
@@ -401,6 +401,16 @@ Figure 2.3: GDP per capita (current US$)
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0200</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
