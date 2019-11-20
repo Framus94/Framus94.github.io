@@ -6,8 +6,276 @@
     <description>Recent content in David Broska on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Academic Writing with RMarkdown</title>
+      <link>/post/academic-writing-with-rmarkdown/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/academic-writing-with-rmarkdown/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;introduction&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Introduction&lt;/h1&gt;
+Have you ever thought about conducting statistical analysis and writing the results in the same software? This article explains why this is useful and how it works.
+RMarkdown merges narrative text with embedded chunks of R-code and creates an elegantly formatted document, including data plots and publication-quality tables. There is no need anymore for Word and other text editors.
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;br&gt;
+Arguably, there are many comprehensive and intelligible guides for writing RMarkdown documents on the internet. However, few show a straight way to write an academic thesis or class assignment in a Latex-looking format with RMarkdown. A template is available in &lt;a href=&#34;https://github.com/Framus94/Academic-writing-with-RMarkdown&#34;&gt;this Github repository&lt;/a&gt;. This article will go through the main elements included in the template. But first let’s discuss why this tool is useful for academic writing.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-11-20-academic-writing-with-rmarkdown_files/example-result.PNG&#34; style=&#34;width:90.0%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;For illustration purposes, we will be using the probably most used R demo data set: mtcars. It comprises information about design and performance of 32 automobiles, extracted from the 1974 Motor Trend US magazine.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;motivation&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Motivation&lt;/h1&gt;
+&lt;p&gt;For their first statistical analysis, people usually rely on R, Stata, or SPSS to compute their results. Subsequently, tables and graphics are copied into Word or another text editor. To proceed in this way is perfectly fine for the beginning. However, in case the data or the model is modified, tables, graphs, and values reported in the text have to be manually updated each time.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/2019-11-20-academic-writing-with-rmarkdown_files/xkcd_markdown_word.png&#34; alt=&#34;Annoyance vs. complexity&#34; style=&#34;width:80.0%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Annoyance vs. complexity&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;More complex projects usually involve many modifications before the analysis is completed. Each statistical result presented in the report then has to be carefully checked for being up-to-date. This makes working with the copy &amp;amp; paste approach not only tedious but also prone to errors.&lt;/p&gt;
+&lt;p&gt;LaTex users might already have an integrated workflow. Maybe a subtle add-on will convince you anyway: Code results can be inserted directly into the text of a .Rmd file by enclosing the code with &lt;code&gt;`r `&lt;/code&gt;. For example, the statements in table &lt;a href=&#34;#tab:statements&#34;&gt;2&lt;/a&gt; remain valid even if the underlying data set changes.
+Similarly, regression coefficients can be extracted from a model object. Their values will be automatically updated when, for example, new variables are added to the model. For illustration, we will run a simple linear regression of miles per gallon on a car’s horsepower.&lt;/p&gt;
+&lt;p&gt;Nevertheless, writing with RMarkdown at the beginning is more complicated than writing with Word, for example. The more complex the project (and the more practice you have with RMarkdown), the more the initial effort pays off.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;example&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Example&lt;/h1&gt;
+&lt;p&gt;As in most quantitative analysis, let’s start with computing summary statistics on the variables of interest. We can embed plots and tables using a code environment beginning with &lt;code&gt;```{r}&lt;/code&gt; and closing with &lt;code&gt;```&lt;/code&gt;. When compiling, RMarkdown will evaluate these environments and display the result in the final document.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summ_stats &amp;lt;- mtcars %&amp;gt;% 
+  select(hp, mpg) %&amp;gt;% 
+  gather(variable, value) %&amp;gt;% 
+  group_by(variable) %&amp;gt;% 
+  summarise(min = min(value),
+            q1 =  quantile(value, 0.25), 
+            mean = mean(value),
+            median = median(value),
+            q3 = quantile(value, 0.75),
+            max = max(value)) %&amp;gt;% 
+  mutate_if(is.numeric, ~ round(., 1)) 
+
+summ_stats_tab &amp;lt;- summ_stats %&amp;gt;% 
+  knitr::kable(caption = &amp;quot;Summary statistics&amp;quot;) %&amp;gt;%
+  kableExtra::kable_styling(bootstrap_options = c(&amp;quot;hover&amp;quot;, &amp;quot;responsive&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;table class=&#34;table table-hover table-responsive&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;caption&gt;
+&lt;span id=&#34;tab:summary-statistics&#34;&gt;Table 1: &lt;/span&gt;Summary statistics
+&lt;/caption&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+variable
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+min
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+q1
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+mean
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+median
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+q3
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+max
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+hp
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+52.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+96.5
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+146.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+123.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+180.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+335.0
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+mpg
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+10.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+15.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+20.1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+19.2
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+22.8
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+33.9
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that we used the &lt;code&gt;kable()&lt;/code&gt; function by the knitr package. Additionally, kableExtra provides some useful functions to customize the appearance of the table.&lt;/p&gt;
+&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;plot_slm &amp;lt;- mtcars %&amp;gt;% 
+  ggplot(aes(hp, mpg)) + 
+  geom_point() +
+  geom_smooth(method = &amp;quot;lm&amp;quot;, se = F) + 
+  theme_minimal() +
+  labs(x = &amp;quot;Horsepower&amp;quot;, y = &amp;quot;Miles per gallon&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-11-20-academic-writing-with-rmarkdown_files/figure-html/plot-simple-linear-regression-1.png&#34; width=&#34;80%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;As promised above, we can also embed inline code.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# simple linear regression
+slm &amp;lt;- lm(mpg ~ hp, data = mtcars)
+
+# extract rounded coefficient for horsepower
+slm_coef &amp;lt;- round( coef(slm)[&amp;quot;hp&amp;quot;], 3)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;caption&gt;&lt;span id=&#34;tab:statements&#34;&gt;Table 2: &lt;/span&gt; Example statements and their output in a .Rmd file&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;50%&#34; /&gt;
+&lt;col width=&#34;49%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th&gt;Write&lt;/th&gt;
+&lt;th&gt;Result&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;The number of observations in the data set is &lt;code&gt;`r nrow(mtcars)`&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;The number of observations in the data set is 32.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;For each additional horsepower the expected fuel consumption decreases by approximately &lt;code&gt;`r -1*slm_coef `&lt;/code&gt;.&lt;/td&gt;
+&lt;td&gt;For each additional horsepower the expected fuel consumption decreases by approximately 0.068.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div id=&#34;how-it-works&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;How it works&lt;/h1&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;em&gt;RMarkdown&lt;/em&gt; integrates multiple applications into one easy-to-use framework. The two key components are the &lt;em&gt;R&lt;/em&gt; programming language and &lt;em&gt;Markdown&lt;/em&gt;, a lightweight markup language for text creation.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;RMarkdown&lt;/em&gt;, in turn, is based on the &lt;em&gt;knitr&lt;/em&gt; package to call the R interpreter and generate model results, report tables, and diagrams.&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;pandoc&lt;/em&gt; application is called next and serves as a document conversion tool that renders text in various output formats. &lt;em&gt;pandoc&lt;/em&gt; can also render &lt;em&gt;LaTex&lt;/em&gt; commands for modern typesetting, equation processing, and document control.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/post/2019-11-20-academic-writing-with-rmarkdown_files/rmarkdown_workflow.png&#34; alt=&#34;Image and explanation borrowed from: applied-r.com&#34; style=&#34;width:97.5%&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Image and explanation borrowed from: &lt;a href=&#34;http://applied-r.com/project-reporting-template/&#34;&gt;applied-r.com&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;By using this tool we can generate different output formats from a .Rmd file: PDF, Word, HTML, RTF, and even beamer presentations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;getting-started&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Getting started&lt;/h1&gt;
+&lt;div id=&#34;get-latex&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Get LaTex&lt;/h2&gt;
+&lt;p&gt;To create PDF documents we need some version of LaTex. If it is not installed on your computer, you can install a lightweight version of LaTex by using the R package &lt;a href=&#34;https://yihui.name/tinytex/&#34;&gt;tinytex&lt;/a&gt;.
+Simply run the following code in the RStudio console.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;install.packages(&amp;#39;tinytex&amp;#39;)
+tinytex::install_tinytex()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-an-rproject&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Create an RProject&lt;/h2&gt;
+&lt;p&gt;From the File menu, select New Project and specify a directory in which all files will be saved.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Click the “File” menu button, then “New Project”.&lt;/li&gt;
+&lt;li&gt;Click “New Directory”.&lt;/li&gt;
+&lt;li&gt;Click “New Project”.&lt;/li&gt;
+&lt;li&gt;Type in the name of the directory to store your project, e.g. “my_project”.&lt;/li&gt;
+&lt;li&gt;If available, select the checkbox for “Create a git repository.”&lt;/li&gt;
+&lt;li&gt;Click the “Create Project” button.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;div id=&#34;create-rmarkdown-documents&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Create RMarkdown documents&lt;/h2&gt;
+&lt;p&gt;From the File menu, select New File and then R Markdown from the drop down menus. A New R Markdown window will open. You may add metadata like the document’s title or the author. However, we can also change this later in the document.&lt;/p&gt;
+&lt;div class=&#34;row&#34;&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-11-20-academic-writing-with-rmarkdown_files/create-rmarkdown-file.PNG&#34; style=&#34;width:95.0%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;col-md-6&#34;&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-11-20-academic-writing-with-rmarkdown_files/select-document-type.PNG&#34; style=&#34;width:95.0%&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;specify-document-options&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Specify document options&lt;/h2&gt;
+&lt;p&gt;We need to adjust the &lt;em&gt;pandoc&lt;/em&gt; header for RMarkdown to specify what and how to compile the output. In other words, we use the metadata in the &lt;em&gt;pandoc&lt;/em&gt; header to specify the format of the document and the files to consider while compiling.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;---
+linestretch: 1.5                 # get some spacing between the lines you write
+bibliography: bib.bib            # this is your bibliography file exported with Zotero, Medeley, ...
+link-citations: yes              # make your links clickable
+output: 
+  bookdown::pdf_document2:       # bookdown::pdf_document2 provides more features than pdf_document
+    number_sections: true        # chapters will be assigned numbers automatically
+    includes:
+      in_header: tex_styles.sty  # here goes the metadata (your name, university, ..., and LaTex packages)
+      before_body:               # include pages before the main part of the document in the following order 
+        - front_matter.Rmd       
+        - abstract.Rmd
+        - acknowledgements.Rmd
+        - table_of_contents.Rmd
+        - list_of_figures.Rmd
+        - list_of_tables.Rmd
+      after_body:                # ... and after the main part
+        - declaration.Rmd
+geometry: &amp;quot;left=3cm, right=3cm, top=2cm, bottom=2.5cm&amp;quot;  # adjust margins of your document
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The &lt;em&gt;pandoc&lt;/em&gt; header also includes a functionality that allows us to keep the writing process tidy and avoid unnecessary redundancies: It allows you to include further documents before (e.g. cover page) or after (e.g. declaration of authorship) the main document. Ideally, you won’t have to adjust these documents every time you write another document, but only the metadata specified in a .sty file. Let’s take a closer look at this file. A template for a .sty file can also be found in &lt;a href=&#34;https://github.com/Framus94/Academic-writing-with-RMarkdown&#34;&gt;this Github&lt;/a&gt; repository.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;% add additional latex packages
+\usepackage{setspace}
+\usepackage{float}
+
+% commands for document metadata
+\newcommand{\University}{Zeppelin University}
+\newcommand{\StudyProgramme}{Sociology, Politics \&amp;amp; Economics}
+\newcommand{\Class}{Quantitative Methods}
+\newcommand{\AssignmentName}{Term Paper}
+\newcommand{\Title}{An Informative Title}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;By specifying &lt;code&gt;\newcommand{\Title}&lt;/code&gt; RMarkdown will insert “An informative title” at all places in the document where you write &lt;code&gt;\Title&lt;/code&gt; (e.g. front matter, declaration of authorship, …). In this way, we no longer have to search the entire document for outdated text modules if they have been changed&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;write-and-compile-your-document&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Write and compile your document&lt;/h2&gt;
+&lt;p&gt;RMarkdown provides a variety of options to format the written text. &lt;a href=&#34;https://bookdown.org/yihui/bookdown/markdown-syntax.html&#34;&gt;Here&lt;/a&gt; you can find a comprehensive guide. Tables and graphs can be inserted as shown above. Finally, the document can be compiled using the key combination &lt;code&gt;shift + ctrl + k&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Path Dependencies in Careers of Visual Artists</title>

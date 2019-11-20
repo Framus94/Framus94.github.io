@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RMarkdown on David Broska</title>
+    <link>/tags/rmarkdown/</link>
+    <description>Recent content in RMarkdown on David Broska</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/rmarkdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Academic Writing with RMarkdown</title>
+      <link>/post/academic-writing-with-rmarkdown/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/academic-writing-with-rmarkdown/</guid>
+      <description>IntroductionHave you ever thought about conducting statistical analysis and writing the results in the same software? This article explains why this is useful and how it works.RMarkdown merges narrative text with embedded chunks of R-code and creates an elegantly formatted document, including data plots and publication-quality tables. There is no need anymore for Word and other text editors.
+Arguably, there are many comprehensive and intelligible guides for writing RMarkdown documents on the internet.</description>
+    </item>
+    
+  </channel>
+</rss>
