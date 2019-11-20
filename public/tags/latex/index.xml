@@ -6,7 +6,7 @@
     <description>Recent content in LaTex on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Academic Writing with RMarkdown</title>
       <link>/post/academic-writing-with-rmarkdown/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/academic-writing-with-rmarkdown/</guid>
       <description>IntroductionHave you ever thought about conducting statistical analysis and writing the results in the same software? This article explains why this is useful and how it works.RMarkdown merges narrative text with embedded chunks of R-code and creates an elegantly formatted document, including data plots and publication-quality tables. There is no need anymore for Word and other text editors.

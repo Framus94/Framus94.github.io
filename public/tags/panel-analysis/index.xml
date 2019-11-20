@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Panel Analysis on David Broska</title>
+    <link>/tags/panel-analysis/</link>
+    <description>Recent content in Panel Analysis on David Broska</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/panel-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Health, Marriage, and Labour Market Success</title>
+      <link>/post/health/health-marriage-and-labour-market-success/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/health/health-marriage-and-labour-market-success/</guid>
+      <description>Introduction1 Literature Review1.1 Human Capital Theory1.2 The Influence of Marriage on Health2 Econometric specification3 Estimation Method4 ResultsConclusionReferencesIntroductionTo what extent does the labor income decrease if a person was diagnosed with a serious illness? Are the incomes of married individuals less affected than those of unmarried individuals?In order to answer these questions, I will first review the literature on human capital theory with particular attention to the assumed positive effect of schooling, professional training, and health on the labor income of individuals.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,683 @@
+---
+title: Health, Marriage, and Labour Market Success
+summary: "Are the incomes of married individuals less affected than those of unmarried individuals when being diagnosed with a serious illness?"
+bibliography: bib.bib
+author: ~
+date: '2019-11-20'
+slug: health-marriage-and-labour-market-success
+categories: []
+tags: [Health, SOEP Data, Labour Markets, Panel Analysis]
+image:
+  caption: ''
+  focal_point: ''
+output:
+  blogdown::html_page:
+    toc: true
+    number_sections: true
+---
+
+<script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
+
+<div id="TOC">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#literature-review"><span class="toc-section-number">1</span> Literature Review</a><ul>
+<li><a href="#human-capital"><span class="toc-section-number">1.1</span> Human Capital Theory</a></li>
+<li><a href="#marriage-health"><span class="toc-section-number">1.2</span> The Influence of Marriage on Health</a></li>
+</ul></li>
+<li><a href="#econ-spec"><span class="toc-section-number">2</span> Econometric specification</a></li>
+<li><a href="#estimation-method"><span class="toc-section-number">3</span> Estimation Method</a></li>
+<li><a href="#results"><span class="toc-section-number">4</span> Results</a></li>
+<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#references">References</a></li>
+</ul>
+</div>
+
+<div id="introduction" class="section level1 unnumbered">
+<h1>Introduction</h1>
+<p>To what extent does the labor income decrease if a person was diagnosed with a serious illness? Are the incomes of married individuals less affected than those of unmarried individuals?
+In order to answer these questions, I will first review the literature on human capital theory with particular attention to the assumed positive effect of schooling, professional training, and health on the labor income of individuals. From a rational choice perspective related to this economic theory, I will then argue why marriage should have a health-promoting effect.
+Indeed, a growing number of sociologists and family researchers have adopted rational choice models <span class="citation">(Hechter and Kanazawa 1997)</span>.
+Although the rational choice model seems to be particularly reasonable in the context of marriages, I will also review studies that emphasize the health-promoting effect of social support.
+The literature review in chapter <a href="#literature-review">1</a> allows deriving the hypothesis that in the case of severe disease, the labor income of married persons decreases to a smaller extent than the earnings of unmarried individuals.
+I test this hypothesis with a fixed-effects regression incorporating an interaction term between marriage and the diagnosis of a disease.
+The econometric specification, which extends the standard model of human capital theory, is described in chapter <a href="#econ-spec">2</a>.
+Thereby, I use longitudinal data from the German Socio-Economic Panel (SOEP). The estimation method suitable for this data type, namely fixed-effects regression, is introduced in chapter <a href="#estimation-method">3</a>.
+The results are presented in chapter <a href="#results">4</a> followed by concluding remarks.</p>
+</div>
+<div id="literature-review" class="section level1">
+<h1><span class="header-section-number">1</span> Literature Review</h1>
+<p>A fundamental idea in labor economics is to think of marketable skills as human capital in which individuals make investments.
+The unifying feature of this kind of reasoning is the assumption of rational behavior. This implies that individuals make conscious decisions to fulfill their perceived needs. These decisions might be restricted by the available time, budget, information, and other resources.
+Following this general approach, human capital theory permits to consider a multitude of factors that form the set of skills and characteristics that influence an individual’s outcomes.
+In order to answer the research problem described above, we might ask what the rational choice approach can contribute to explaining the wage differences between married and unmarried people. In particular, the joint effect of marriage and health on an individual’s labor income is of theoretical interest (see section <a href="#human-capital">1.1</a>).
+In addition, studies that emphasize the health-promoting effect of social support will be reviewed in section <a href="#marriage-health">1.2</a>.</p>
+<div id="human-capital" class="section level2">
+<h2><span class="header-section-number">1.1</span> Human Capital Theory</h2>
+<p>Human capital is broadly defined as a stock of skills and characteristics that contribute to the individuals’ productivity.
+On the one hand, differences in human capital are due to skills or characteristics that are likely to vary over time. More specifically, individuals can make investments that imply present costs but involve a pay-off in the future.
+Education and professional training, for example, are assumed to have a positive influence on an individual’s earnings. Typically, schooling takes place before joining the job market whereas training occurs thereafter. However, individuals might also leave the workforce in order to take more schooling.
+On the other hand, it is assumed that individuals have a different level of human capital due to innate abilities remaining constant throughout their lives.</p>
+<p>In addition to schooling and training, <span class="citation">Becker (1964)</span> and <span class="citation">Fuchs (1966)</span> argue that health is an important component in the stock of human capital. Specifically, <span class="citation">Becker (1962)</span> mentioned medical care and vitamin consumption as ways of investing in human capital. Individuals or employers might accept present costs in order to assure a maintained or even increased productivity.
+Nevertheless, economists mostly rely on the more elaborated theoretical model of <span class="citation">Grossman (1972)</span> to study health outcomes <span class="citation">(Ribar 2004, 51)</span>. He identified a complex interrelation between working time, wages and health.  to Becker’s theories on household production and human capital, however, the model of Grossman suggests that current investments in health have long-term benefits and depreciate over time. First, he argues that good health is based on the inputs of goods such as medicines, nutritious foods, and medical services. Second, an individual’s well-being is achieved by investing time, such as in training sessions, monitoring symptoms or visiting a doctor.
+The study “Health and Labor Market Success: The Role of Various Diseases” by <span class="citation">Bartel and Taubman (1979)</span> exemplifies this theoretical perspective. The authors indicate that in the case of an enduring disease “a person can undertake treatment to cure it, use other investments to overcome its effects or move into an occupation in which it is less of a handicap” (Ibid, 1). Moreover, they argue that the extent to which this investment is economically viable for the individual depends, among other things, on the number of years until the retirement and/or the prospective life expectancy.</p>
+</div>
+<div id="marriage-health" class="section level2">
+<h2><span class="header-section-number">1.2</span> The Influence of Marriage on Health</h2>
+<p>Similarly, it is possible to think of marriage as increasing the incentive to avoid risks and to maintain a healthy lifestyle.
+From a rational choice perspective, sustaining good health is the condition to satisfy the (economic) expectations that the spouse might have towards the marriage.
+According to the simplest economic models, marriages occur or continue if the perceived value of marriage exceeds that of alternatives. In other words, individuals compare their expected socio-economic status associated with entering or continuing the marriage with the anticipated outcomes of remaining single or divorcing <span class="citation">(Ribar 2004, 9)</span>.
+In fact, <span class="citation">South and Lloyd (1995)</span> show that divorce rates vary with the structural possibilities of the spouses, that is, the quantity and quality of potential new partners on the local marriage market significantly increase the risk of marriage dissolution. This supports the supposition of Becker <span class="citation">(1974, 21–23)</span> that men and women continue to search for companions during their marriage.
+This result suggests that individuals are likely to make investments in their health in order to preserve or improve their productivity, that is, to remain economically attractive for their partners.
+In other words, individuals weigh the current value of their time invested in fitness training, doctor visits, and other health-promoting activities against the expected utility of being married at some point of time in the future.</p>
+<p>At the same time, both ending a marriage and eventually committing to a new one involves transaction costs. For example, <span class="citation">Treas (1993)</span> shows that a collectivized financial arrangement among married couples, which increases the spouses’ dependence on their marriage, is strongly linked to more stable relationships. The overall conclusion of this study is that transaction costs provide an appropriate description of decisions made by married couples.
+Therefore, marriage is not only a lifetime commitment in an idealistic sense. Individuals tend to preserve marriage also to avoid transaction costs associated with the transition from one marital status to another.
+In fact, remaining married provides numerous benefits such as tax advantages, a reduced need for resources (one residence instead of two, one set of appliances, etc.) and the possibility of specialization allowing married families to become more productive with respect to time and goods. Therefore, married couples are not only more likely to act future-oriented. The increased time available in a married household would also allow for greater investments in health <span class="citation">(Ribar 2004, 8)</span>.</p>
+<p>For these reasons, being married should have a positive impact on health by shaping an  behavior.
+Indeed, <span class="citation">Shmerling (2016)</span> notes that married people attend doctors appointments regularly and follow the recommendations more often than single people. Accordingly, <span class="citation">Aizer et al. (2013)</span> found that married individuals are less likely to have advanced cancer at the time of diagnosis. They are also more likely to receive effective therapy and have a higher chance to survive for a longer time.
+Put differently, married individuals have a higher chance to receive the diagnose in earlier stages of the illnesses due to a higher frequency of health checks.
+Since this allows for better treatment, individuals are more likely to continue working full-time or to reduce their working hours only slightly due to restrictions imposed by the illness.
+Therefore, their labor incomes should be affected to a smaller extent when compared to unmarried individuals.</p>
+<p>Marriage could also have other direct, not economically motivated, effects on health. First, it might improve the individual’s capacity to cope with an illness more effectively. It has been shown that social support contributes to a better understanding of the problems individuals encounter, enhances the motivation to take tangible measures and reduces the emotional burden that can hinder other coping efforts <span class="citation">(Wortman and Conway 1985; Cohen 1988; Thoits 1986)</span>. In other words, the spouse provides continuity and security in a life course disrupted by a diagnosis of a serious illness. Similarly, marriage inhibits social isolation which is associated with poorer mental and physical health <span class="citation">(Berkman 1985)</span>. Consequently, as the spouse contributes to maintaining emotional and psychological health, married individuals are more likely to continue their working routine after receiving the diagnosis.
+Second, married individuals typically have larger social networks and especially extended family relationships <span class="citation">(Sherbourne and Hays 1990)</span>. According to Revenson <span class="citation">(1994, 123)</span>, this finding suggests that they access a greater range of available support when needed, more opportunities for social interaction, and more diverse sources increasing the likelihood of matching their specific needs adequately.
+Hence, marriage might also contribute to preserving an individual’s ability to continue working by enhancing access to crucial resources through larger social networks.</p>
+<p>In summary, both the human capital theory and the papers identifying a health-promoting effect of social support allow deriving the following hypothesis.</p>
+<blockquote>
+<p>Hypothesis: <em>The labor income of married persons diagnosed with a severe illness  to a smaller extent than the earnings of unmarried individuals having this disease.</em></p>
+</blockquote>
+</div>
+</div>
+<div id="econ-spec" class="section level1">
+<h1><span class="header-section-number">2</span> Econometric specification</h1>
+<p>In the context of an econometric model, I expect that the diagnosis of a disease is associated with a decline in an individual’s labor income. Thereby, diseases that are accompanied by heavier constraints on the working capacity should have larger negative coefficients.
+However, in accordance with the foregoing discussion, I expect a positive interaction effect between marriage and a diagnosed illness. Therefore, the overall effect on labor income for married individuals with an illness will be smaller compared to unmarried individuals with a disease.
+In order to test this hypothesis, I will specify the empirical model with a set of dummy variables.</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\text{mar}_{it}
+\begin{cases}
+1 \text{ if married}\\
+0 \text{ if unmarried}
+\end{cases}
+&amp;\text{sex}_{i}
+\begin{cases}
+1\text{ if male} \\
+0\text{ if female}
+\end{cases}
+&amp;\text{ ill}_{itj}=
+\begin{cases}
+1\text{ if diagnosed}\\
+0\text{ if not diagnosed}
+\end{cases}
+\end{aligned}
+\]</span>
+<!-- Along with the control variables explained below, I propose the following econometric specification.  --></p>
+<p><span class="math display">\[\log(\text{inc})=\beta_0+\beta_1\text{edu}+\beta_2\text{age}+\beta_3\text{hrs}+\delta_1\text{mar}+\delta_2\text{sex}+\sum_{j=1}^{12}\delta_{3j}\text{ ill}_j+\sum_{j=1}^{12}\gamma_{1j}(\text{mar}\times\text{ill}_j)+\gamma_2(\text{mar}\times \text{sex})+u\]</span></p>
+<p>Thereby, <span class="math inline">\(\delta_1\)</span> denotes the coefficient for an individual being married at time <span class="math inline">\(t\)</span>. <span class="math inline">\(\delta_{3j}\)</span> indicates the coefficients for each variable <span class="math inline">\(j\)</span> that refers to a specific illness listed in table <a href="#tab:summary-stats-kable">4.1</a> diagnosed at time <span class="math inline">\(t\)</span>. If an individual is married or diagnosed with a certain illness, the dummy variables take on the value one so that the intercept will be changed by the value of <span class="math inline">\(\delta_1\)</span> or <span class="math inline">\(\delta_{3j}\)</span> respectively. If both categorical variables take on the value one the intercept will be additionally shifted by the coefficient of the interaction term <span class="math inline">\(\gamma_{1j}\)</span>.</p>
+<p>Moreover, the model incorporates an interaction term for an individual being married and its biological sex.
+Intriguingly, <span class="citation">Waite and Gallagher (2002)</span> cite a number of studies that find wages of married men being higher than those of unmarried men. Thereby, it is unclear whether these wage benefits of marriage also apply to women. Refer to Ribar <span class="citation">(2004, 6–7)</span> for a detailed explanation of the hypothesis explaining these patterns of wage differences.
+Importantly, the regression is likely to produce a positive sign for <span class="math inline">\(\gamma_2\)</span>, reflecting the wage premium for married males.</p>
+<p>As control variables, I expect education (<span class="math inline">\(\beta_1\)</span>), age (<span class="math inline">\(\beta_2\)</span>) and the average weekly working hours (<span class="math inline">\(\beta_3\)</span>) to have a positive influence on an individual’s labor income.
+First, according to the human capital theory, the formation of labor income should be positively influenced by education since additional investments in schooling or professional training tend to increase the set of marketable skills. This variable is operationalized by the aggregated number of an individual’s years of schooling and training.
+Second, the age of an individual approximates the years of experience in the labor force <span class="citation">(Andrén and Palmer 2001)</span>. Similar to education, this variable captures the acquisition of work-related experience, opportunities to advance to higher paid positions, and other factors that can affect labor income. Therefore, including this variable should yield a positive coefficient.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
+Third, the variable actual weekly working hours captures that individuals who spend more time working also receive higher wages. This implies <span class="math inline">\(\beta_3\)</span> to have a positive sign.
+<!-- In summary, these considerations yield the following econometric model. --></p>
+</div>
+<div id="estimation-method" class="section level1">
+<h1><span class="header-section-number">3</span> Estimation Method</h1>
+<p>What is the most appropriate estimation method for the research interest described above? In this section, I draw on the explanations of <span class="citation">Brüderl and Ludwig (2015)</span> on fixed-effects panel regression to answer this question. Consider the method of Pooled Ordinary Least Squares (POLS) to begin with. In spite of the repeated observations within the same individuals, POLS applies the standard linear regression framework to the multilevel data. By means of the following model, it can be illustrated why the present data structure suggests a different estimation method.</p>
+<p><span class="math display">\[y_{it}=\mathbf{x}_{it}\boldsymbol{\beta}+\alpha_i+u_{it}\]</span></p>
+<p>Thereby, the continuous dependent variable is regressed on <span class="math inline">\(J\)</span> independent variables <span class="math inline">\(X_1,\dots,X_J\)</span>.
+<span class="math inline">\(y_{it}\)</span> indicates the observed value of individual <span class="math inline">\(i\)</span> measured at time <span class="math inline">\(t\)</span>, <span class="math inline">\(\mathbf{x}_{it}\)</span> denotes <span class="math inline">\((1\times J)\)</span> vector of independent variables and <span class="math inline">\(\boldsymbol{\beta}\)</span> the associated <span class="math inline">\((J\times 1)\)</span> vector of coefficients to be estimated.
+For the purpose of the present discussion, the error term has been decomposed. <span class="math inline">\(u_{it}\)</span> denotes an error term varying between individuals and over time. The term <span class="math inline">\(\alpha_i\)</span> denotes the time-constant characteristics of individuals.
+<!-- Note that the decomposition of the error term into a component that is either constant or varying over time is only possible due to the longitudinal structure of the data, that is, repeated observations within individuals. -->
+<!-- In the the case of a cross-sectional analysis only a single observation is available for each individual. Hence, the two type of errors are not distinguished in a POLS. -->
+Consistency of the POLS estimators requires two conditions to be fulfilled.
+First, it requires the idiosyncratic error <span class="math inline">\(u_{it}\)</span> to be exogenous so that <span class="math inline">\(E(\mathbf{x&#39;}_{it}u_{it})=\mathbf{0}\)</span>. In other words, it is assumed that time-varying factors are not related to the explanatory variables in a given point of time.
+Second, consistency presupposes exogeneity of the time-constant individidual heterogeneity, that is, <span class="math inline">\(E(\mathbf{x&#39;}_{it}\alpha_{i})=\mathbf{0}\)</span>. While the first assumption might be unproblematic, it is unlikely that the individuals’ constant characteristics are unrelated to the explanatory variables.
+Individuals that feature a genetic disposition, for example, are more likely to be diagnosed with a disease.
+Therefore, the covariance of the person-specific intercepts <span class="math inline">\(\alpha_i\)</span> and the vector <span class="math inline">\(\mathbf{x}_i\)</span> of covariates is not equal to zero. It follows that the POLS estimators are both biased and inconsistent.</p>
+<p>How to solve the problem of <span class="math inline">\(E(\mathbf{x&#39;}_{it}\alpha_i)\neq\mathbf{0}\)</span>? The idea of fixed-effects estimation is to first compute the average for each individual across time. In the case of the value of the dependent variable of individual <span class="math inline">\(i\)</span> in year <span class="math inline">\(t\)</span>, this can be denoted by <span class="math inline">\(\bar{y}_i=\frac{1}{T}\sum_{t=1}^{T}y_{it}\)</span>.
+In contrast, <span class="math inline">\(\alpha_i\)</span> does not depend on time so that the average is given by <span class="math inline">\(\alpha_i\)</span>. Then, the averaged equation can be denoted by</p>
+<p><span class="math display">\[\bar{y}=\mathbf{\bar{x}}\boldsymbol{\beta}+\alpha_i+\bar{u}_{it}\]</span></p>
+<p>The step next is to subtract the averaged equation from the POLS model. The subtraction of the time mean implies that the unobserved heterogeneity <span class="math inline">\(\alpha_i\)</span> will be removed. Consequently, <span class="math inline">\(\alpha_i\)</span> and <span class="math inline">\(\bf{x}_{it}\)</span> are allowed to be related with each other but this does not result in biased estimators. Hence, <span class="math inline">\(E(\mathbf{x}_{it}\alpha_i)=\mathbf{0}\)</span> is no longer needed.</p>
+<p><span class="math display">\[y_{it}-\bar{y}_{i}=(\mathbf{x}_{it}-\bar{\mathbf{x}}_i)\boldsymbol{\beta}+u_{it}-\bar{u_i}\]</span>
+For the fixed-effects estimators to be consistent we require strict exogeneity with respect to the regressors and the idiosyncratic errors <span class="math inline">\(u_{it}\)</span>.
+Although this assumption might be problematic in some cases, I suppose that except for the covariates included in the model no relevant factors change over time.
+It should be also noted that one of the major advantages of the fixed-effects estimation, i.e. the removal of time-invariant error <span class="math inline">\(\alpha_i\)</span>, can also be regarded as its drawback. Since it removes any terms that are time constant, this analytical strategy is not suitable to estimate the effects of certain stable characteristics on a person’s wage.
+For example, the sex variable denoted in the regression model in section <a href="#econ-spec">2</a> will be discarded by demeaning.
+Innate abilities, which are associated with labor income according to the human capital theory (see section <a href="#human-capital">1.1</a>), cannot be included as main effect either.
+It is only possible to incorporate these stable characteristics into interaction terms with variables that vary over time. However, the literature review has shown that the biological gender of a person is most interesting in conjunction with marriage. Since the estimation of this interaction effect is straightforward, I consider fixed-effects regression to be the appropriate method.</p>
+</div>
+<div id="results" class="section level1">
+<h1><span class="header-section-number">4</span> Results</h1>
+<p>In order to estimate the effect of a disease and the conjunct effect of being married and having a severe illness, I use longitudinal data from the German Socio-Economic Panel (SOEP).
+Similar to <span class="citation">Andrén and Palmer (2001)</span>, I restrict the sample to individuals of the working population. Thus, the results of the analysis are based on responses from individuals who were between 18 and 64 years old at the time of the survey.
+Further summary statistics on this and other variables considered in this analysis are presented in table <a href="#tab:summary-stats-kable">4.1</a>.</p>
+
+<table class="table table-hover table-responsive" style="margin-left: auto; margin-right: auto;">
+<caption>
+<span id="tab:summary-stats-kable">Table 4.1: </span>Summary statistics (N = 13919, i = 3998, t = 2-6)
+</caption>
+<thead>
+<tr>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:center;">
+Min.
+</th>
+<th style="text-align:center;">
+Max.
+</th>
+<th style="text-align:center;">
+Mean
+</th>
+<th style="text-align:center;">
+Median
+</th>
+<th style="text-align:center;">
+St. Dev.
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Gross Income Last Month in EUR
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+40000.0
+</td>
+<td style="text-align:center;">
+2717.704
+</td>
+<td style="text-align:center;">
+2400.00
+</td>
+<td style="text-align:center;">
+2083.00
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gross Income Last Month in EUR (log)
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+10.6
+</td>
+<td style="text-align:center;">
+7.580
+</td>
+<td style="text-align:center;">
+7.78
+</td>
+<td style="text-align:center;">
+1.01
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sleep Disturbances
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.061
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.24
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Diabetes
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.029
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.17
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Asthma
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.032
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.18
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cardiopathy
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.028
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.17
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Cancer
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.012
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.11
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Apoplectic Stroke
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.003
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.05
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Megrim
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.043
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.20
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+High Blood Pressure
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.120
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.32
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Depressive Psychosis
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.046
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.21
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Joint Disorder
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.100
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.30
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Chronic Back Complaints
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.108
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.31
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Other Illness
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.096
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.30
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Actual Weekly Work Time
+</td>
+<td style="text-align:center;">
+1
+</td>
+<td style="text-align:center;">
+76.0
+</td>
+<td style="text-align:center;">
+36.382
+</td>
+<td style="text-align:center;">
+40.00
+</td>
+<td style="text-align:center;">
+12.80
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Years of education or training
+</td>
+<td style="text-align:center;">
+7
+</td>
+<td style="text-align:center;">
+18.0
+</td>
+<td style="text-align:center;">
+12.922
+</td>
+<td style="text-align:center;">
+12.00
+</td>
+<td style="text-align:center;">
+2.72
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Age
+</td>
+<td style="text-align:center;">
+18
+</td>
+<td style="text-align:center;">
+64.0
+</td>
+<td style="text-align:center;">
+43.750
+</td>
+<td style="text-align:center;">
+45.00
+</td>
+<td style="text-align:center;">
+11.35
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Married
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.552
+</td>
+<td style="text-align:center;">
+1.00
+</td>
+<td style="text-align:center;">
+0.50
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sex
+</td>
+<td style="text-align:center;">
+0
+</td>
+<td style="text-align:center;">
+1.0
+</td>
+<td style="text-align:center;">
+0.475
+</td>
+<td style="text-align:center;">
+0.00
+</td>
+<td style="text-align:center;">
+0.50
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Particular attention should be drawn to the dependent variable of this analysis, that is, the gross labor income individuals have earned in the last month before the interview date.
+It features a few very high values, up to a maximum of 40000 Euro. Since OLS is sensitive to extreme values, it seems reasonable to reduce the range of the variable by log transformation <span class="citation">(Wooldridge 2013, 193)</span>.
+Figure 1 displays the histograms of the original and the transformed dependent variable.</p>
+<div class="figure">
+<img src="/post/health/2019-11-21-health-marriage-and-labour-market-success_files/dependent_variable.PNG" alt="Histograms of dependent variable" />
+<p class="caption">Histograms of dependent variable</p>
+</div>
+<p>The result of regressing the listed explanatory variables on the log-transformed labor income is given by table 2.
+Note that the table presents the estimators of two regressions. The first column displays the regression output for a twoways fixed-effects model with two indices, that is, the variables have been demeaned and the estimated coefficients are controlled for both person and time. Consider that the age variable has been dropped due to multicollinearity. In order to obtain an estimate for the effect of age on income, another fixed-effects model was computed without taking the survey years into account. The result is displayed in the second column. Since the coefficients provide almost the same estimates, it can be concluded that the age variable is able to reflect the time-specific variability.
+According to this model, to become one year older is associated with an approximate increase of <span class="math inline">\(100\times\beta_2\approx\)</span> 6.01%, holding all other factors constant. As applied to all further interpretations in this term paper, it is more precise to report the exponentiated estimators for the effect on the dependent variable <span class="citation">(Wooldridge 2013, 192)</span>. Hence, an increase in the age variable by one year is associated with an income growth of <span class="math inline">\(100\times(e^{\beta_2}-1)\approx\)</span> 6.19% (ceteris paribus).
+Similarly, the return to an additional year of education is equal to an increase of
+<!-- $100\times(e^{\beta_1}-1)=$ -->
+5.77%. Moreover, one extra hour of work per week is associated with a higher income of
+<!-- $100\times(e^{\beta_3}-1)=$ -->
+2.87%.
+Consequently, the control variables show the expected direction defined in section <a href="#econ-spec">2</a>. Moreover, all coefficients are statistically significantly indicated by p-values smaller than 0.01.</p>
+<p>In contrast, the coefficients for a person being married <span class="math inline">\(\delta_1\)</span> and for the interaction between marriage and the sex of an individual <span class="math inline">\(\gamma_2\)</span> are not significant with p <span class="math inline">\(\approx\)</span> 0.37 and p <span class="math inline">\(\approx\)</span> 0.74 respectively.
+Remarkably, the coefficient for marriage is negative denoting an income decrease. In accordance with <span class="citation">Waite and Gallagher (2002)</span>, however, men still have a wage premium when compared to women. More precisely, the income of a female being married is expected to change by <span class="math inline">\(100\times(e^{\delta_1}-1)\approx\)</span> -4.29%. Conversely, the income of men is affected by only <span class="math inline">\(100\times(e^{\delta_1+\gamma_2}-1)\approx\)</span> -2.06%.
+Both interpretations apply to individuals without diagnosis of disease.</p>
+<p>Among the dummy variables indicating whether an individual has been diagnosed with a disease listed in table <a href="#tab:summary-stats-kable">4.1</a>, the coefficients for sleep disturbances, cancer, and apoplectic stroke are statistically significant.
+In the case that an unmarried individual was diagnosed with cancer, the contemporanuous effect on income is given by <span class="math inline">\(100\times (e^{\delta_{35}}-1)\approx\)</span> -32.35% with p &lt; 0.01.
+Given the severeness of this disease, the magnitude of the expected income decline seems plausible. Notably, however, the income of a married individual diagnosed with cancer changes by only <span class="math inline">\(100\times(e^{\delta_1+\delta_{35}+\gamma_{15}}-1)\approx\)</span> -19.81% for females and by <span class="math inline">\(100\times(e^{\delta_1+\delta_{35}+\gamma_{15}+\gamma_2}-1)\approx\)</span> -17.94% for males. Thereby, <span class="math inline">\(\gamma_{15}\)</span>, the coefficient of the interaction term for married persons with cancer, is statistically significant with p <span class="math inline">\(\approx\)</span> 0.07%.</p>
+<p>Similarly, the model suggests the labor income to decline by about 27.81% given an unmarried individual was diagnosed with an apoplectic stroke (p <span class="math inline">\(\approx\)</span> 0.07).
+It is surprising, however, that the income of married persons with this diagnosis is even expected to increase by 1.5% for females and by 3.87% for males. However, in comparison to the estimate <span class="math inline">\(\gamma_{15}\)</span> for the interaction effect between marriage and cancer, the standard errors of coefficient <span class="math inline">\(\gamma_{16}\)</span> is about twice as high. Although the coefficient <span class="math inline">\(\gamma_{16}\)</span> is significant (p <span class="math inline">\(\approx\)</span> 0.09), this casts doubt on the precision of the estimate.</p>
+<p>Finally, the labor income of an unmarried individual diagnosed with sleep disturbances is expected to decline by about 7.29% (p <span class="math inline">\(\approx\)</span> 0.06).
+In the case that a married female or male person receives this diagnosis, the income changes by only -5.65% and -3.45% respectively. However, the coefficient <span class="math inline">\(\gamma_{11}\)</span> for the interaction term is not significant (p <span class="math inline">\(\approx\)</span> 0.25).</p>
+<p>Based on the statistically significant estimators for cancer and apoplectic strokes, i.e. the coefficients for the dummy variables <span class="math inline">\(\delta_{35}\)</span> and <span class="math inline">\(\delta_{36}\)</span> as well as for the interaction terms <span class="math inline">\(\gamma_{15}\)</span> and <span class="math inline">\(\gamma_{16}\)</span>, we can partly confirm the hypothesis that the income of married persons is less affected by a severe illness when compared to unmarried individuals.</p>
+
+<p><img src="/post/health/2019-11-21-health-marriage-and-labour-market-success_files/regression_table1.PNG" /></p>
+
+</div>
+<div id="conclusion" class="section level1 unnumbered">
+<h1>Conclusion</h1>
+<p>In this term paper, I argued that in the case of a serious illness, the labor market outcomes of married persons are less affected than those of unmarried individuals.
+It turned out that only the estimators for the diagnosis of cancer and apoplectic strokes are statistically significant. Therefore, it is possible to partially confirm the hypothesis that the income of married persons is affected to a smaller extent when compared to unmarried individuals.
+It should be noted, however, that the model by which these results were obtained shows a very low <span class="math inline">\(R^2\)</span>. Random effects models could increase the variance explained by allowing time-constant variables to be included also outside interaction terms. At the same time, these models require the additional assumption of no time-constant unobserved heterogeneity, that is, <span class="math inline">\(E(\alpha_i|x_{it})=E(\alpha_i)=0\)</span>. As indicated in section <a href="#econ-spec">2</a>, it is important to consider carefully under which conditions this assumption would actually be plausible.
+Within this limitation, I conclude that marriage has a positive effect on the labor market outcomes of individuals diagnosed with severe illness.</p>
+<div style="page-break-after: always;"></div>
+</div>
+<div id="references" class="section level1 unnumbered">
+<h1>References</h1>
+<div id="refs" class="references">
+<div id="ref-aizer2013">
+<p>Aizer, Ayal A., Ming-Hui Chen, Ellen P. McCarthy, Mallika L. Mendu, Sophia Koo, Tyler J. Wilhite, Powell L. Graham, et al. 2013. “Marital Status and Survival in Patients with Cancer.” <em>Journal of Clinical Oncology</em> 31 (31): 3869–76. <a href="https://doi.org/10.1200/JCO.2013.49.6489">https://doi.org/10.1200/JCO.2013.49.6489</a>.</p>
+</div>
+<div id="ref-andren2001">
+<p>Andrén, Daniela, and Edward Palmer. 2001. “The Effect of Sickness on Earnings.” 45. University of Gothenburg, Department of Economics.</p>
+</div>
+<div id="ref-bartel1979">
+<p>Bartel, Ann, and Paul Taubman. 1979. “Health and Labor Market Success: The Role of Various Diseases.” <em>The Review of Economics and Statistics</em> 61 (1): 1–8. <a href="https://doi.org/10.2307/1924825">https://doi.org/10.2307/1924825</a>.</p>
+</div>
+<div id="ref-becker1962">
+<p>Becker, Gary S. 1962. “Investment in Human Capital: A Theoretical Analysis.” <em>Journal of Political Economy</em> 70 (5): 9–49.</p>
+</div>
+<div id="ref-becker1964">
+<p>———. 1964. <em>Human Capital: A Theoretical and Empirical Analysis, with Special Reference to Education</em>. Rochester, NY: Social Science Research Network.</p>
+</div>
+<div id="ref-becker1974mar2">
+<p>———. 1974. “A Theory of Marriage: Part II.” <em>Journal of Political Economy</em> 82 (2): 11–26.</p>
+</div>
+<div id="ref-berkman1985">
+<p>Berkman, Lisa F. 1985. <em>The Relationship of Social Networks and Social Support to Morbidity and Mortality</em>. Social Support and Health. San Diego, CA, US: Academic Press.</p>
+</div>
+<div id="ref-bruderl2015">
+<p>Brüderl, Josef, and Volker Ludwig. 2015. “Fixed-Effects Panel Regression.” <em>Sage Handbook of Regression Analysis and Causal Inference</em>, January, 327–56.</p>
+</div>
+<div id="ref-cohen1988">
+<p>Cohen, Sheldon. 1988. “Psychosocial Models of the Role of Social Support in the Etiology of Physical Disease.” <em>Health Psychology : Official Journal of the Division of Health Psychology, American Psychological Association</em> 7 (3): 269–97. <a href="https://doi.org/10.1037/0278-6133.7.3.269">https://doi.org/10.1037/0278-6133.7.3.269</a>.</p>
+</div>
+<div id="ref-fuchs1966">
+<p>Fuchs, Victor R. 1966. “The Contribution of Health Services to the American Economy.” <em>The Milbank Memorial Fund Quarterly</em> 44 (4): 65–103. <a href="https://doi.org/10.2307/3349060">https://doi.org/10.2307/3349060</a>.</p>
+</div>
+<div id="ref-grossman1972">
+<p>Grossman, Micheal. 1972. <em>The Demand for Health: A Theoretical and Empirical Investigation</em>. Columbia University Press. <a href="https://doi.org/10.7312/gros17900">https://doi.org/10.7312/gros17900</a>.</p>
+</div>
+<div id="ref-hechter1997">
+<p>Hechter, Michael, and Satoshi Kanazawa. 1997. “Sociological Rational Choice Theory.” <em>Annual Review of Sociology</em> 23 (1): 191–214. <a href="https://doi.org/10.1146/annurev.soc.23.1.191">https://doi.org/10.1146/annurev.soc.23.1.191</a>.</p>
+</div>
+<div id="ref-revenson1994">
+<p>Revenson, Tracey A. 1994. “Social Support and Marital Coping with Chronic Illness.” <em>Annals of Behavioral Medicine</em> 16 (2): 122–30. <a href="https://doi.org/10.1093/abm/16.2.122">https://doi.org/10.1093/abm/16.2.122</a>.</p>
+</div>
+<div id="ref-ribar2004">
+<p>Ribar, David C. 2004. “What Do Social Scientists Know About the Benefits of Marriage? A Review of Quantitative Methodologies. IZA Discussion Paper No 998.” Bonn.</p>
+</div>
+<div id="ref-sherbourne1990">
+<p>Sherbourne, C. D., and R. D. Hays. 1990. “Marital Status, Social Support, and Health Transitions in Chronic Disease Patients.” <em>Journal of Health and Social Behavior</em> 31 (4): 328–43.</p>
+</div>
+<div id="ref-shmerling2016">
+<p>Shmerling, Robert H. 2016. “The Health Advantages of Marriage.” <em>Harvard Health Blog</em>. https://www.health.harvard.edu/blog/the-health-advantages-of-marriage-2016113010667.</p>
+</div>
+<div id="ref-south1995">
+<p>South, Scott J., and Kim M. Lloyd. 1995. “Spousal Alternatives and Marital Dissolution.” <em>American Sociological Review</em> 60 (1): 21–35. <a href="https://doi.org/10.2307/2096343">https://doi.org/10.2307/2096343</a>.</p>
+</div>
+<div id="ref-thoits1986">
+<p>Thoits, Peggy A. 1986. “Social Support as Coping Assistance.” <em>Journal of Consulting and Clinical Psychology</em> 54 (4): 416–23. <a href="https://doi.org/10.1037/0022-006X.54.4.416">https://doi.org/10.1037/0022-006X.54.4.416</a>.</p>
+</div>
+<div id="ref-treas1993">
+<p>Treas, Judith. 1993. “Money in the Bank: Transaction Costs and the Economic Organization of Marriage.” <em>American Sociological Review</em> 58 (5): 723–34. <a href="https://doi.org/10.2307/2096283">https://doi.org/10.2307/2096283</a>.</p>
+</div>
+<div id="ref-waite2002">
+<p>Waite, Linda, and Maggie Gallagher. 2002. <em>The Case for Marriage: Why Married People Are Happier, Healthier and Better Off Financially</em>. Broadway Books.</p>
+</div>
+<div id="ref-wooldridge2013">
+<p>Wooldridge, Jeffrey M. 2013. “Introductory Econometrics: A Modern Approach 5th Edition.” <em>Mason, OH: South-Western</em>.</p>
+</div>
+<div id="ref-wortman1985">
+<p>Wortman, Camille B., and Terry L. Conway. 1985. “The Role of Social Support in Adaptation and Recovery from Physical Illness.” In <em>Social Support and Health</em>, 281–302. San Diego, CA, US: Academic Press.</p>
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>It seems also reasonable to control for age since the process of aging can increase the likelihood of some specific diseases. In the context of his theoretical model of health demand, <span class="citation">Grossman (1972)</span> argues that health status also determines the total amount of working time. Healthier individuals, for example, might be able or willing to spend more time working than those who were diagnosed with a certain disease. Since health status is likely to be correlated with working time, I include the weekly working hours indicated by the respondents of the SOEP questionnaire into the model. In doing so, I aim at avoiding the risk of omitted variable bias.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+</ol>
+</div>

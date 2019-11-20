@@ -4,8 +4,16 @@
     
     <url>
     
-      <loc>/post/academic-writing-with-rmarkdown/</loc>
+      <loc>/post/health/health-marriage-and-labour-market-success/</loc>
       <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/academic-writing-with-rmarkdown/</loc>
+      <lastmod>2019-11-19T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -94,7 +102,34 @@
     
     <url>
     
+      <loc>/tags/health/</loc>
+      <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/tags/latex/</loc>
+      <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/labour-markets/</loc>
+      <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/panel-analysis/</loc>
       <lastmod>2019-11-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -120,7 +155,7 @@
     <url>
     
       <loc>/tags/publishing/</loc>
-      <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+      <lastmod>2019-11-19T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -138,6 +173,15 @@
     <url>
     
       <loc>/tags/rmarkdown/</loc>
+      <lastmod>2019-11-19T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/soep-data/</loc>
       <lastmod>2019-11-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>

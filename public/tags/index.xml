@@ -30,18 +30,45 @@
     </item>
     
     <item>
+      <title>Health</title>
+      <link>/tags/health/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/health/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>LaTex</title>
       <link>/tags/latex/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Labour Markets</title>
+      <link>/tags/labour-markets/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/labour-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Panel Analysis</title>
+      <link>/tags/panel-analysis/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/panel-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Publishing</title>
       <link>/tags/publishing/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/publishing/</guid>
       <description></description>
@@ -59,9 +86,18 @@
     <item>
       <title>RMarkdown</title>
       <link>/tags/rmarkdown/</link>
-      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/rmarkdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SOEP Data</title>
+      <link>/tags/soep-data/</link>
+      <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/soep-data/</guid>
       <description></description>
     </item>
     

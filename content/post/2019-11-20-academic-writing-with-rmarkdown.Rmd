@@ -2,7 +2,7 @@
 title: Academic Writing with RMarkdown
 summary: "How to create beautifully formatted articles from within RStudio"
 author: ~
-date: '2019-11-20'
+date: '2019-11-19'
 slug: academic-writing-with-rmarkdown
 categories: []
 tags: [Publishing, RMarkdown, LaTex]
