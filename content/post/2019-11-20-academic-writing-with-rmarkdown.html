@@ -32,18 +32,18 @@ Arguably, there are many comprehensive and intelligible guides for writing RMark
 <div id="motivation" class="section level1">
 <h1>Motivation</h1>
 <p>For their first statistical analysis, people usually rely on R, Stata, or SPSS to compute their results. Subsequently, tables and graphics are copied into Word or another text editor. To proceed in this way is perfectly fine for the beginning. However, in case the data or the model is modified, tables, graphs, and values reported in the text have to be manually updated each time.</p>
-<div class="figure">
-<img src="/post/2019-11-20-academic-writing-with-rmarkdown_files/xkcd_markdown_word.png" alt="Annoyance vs. complexity" style="width:80.0%" />
-<p class="caption">Annoyance vs. complexity</p>
-</div>
+<p><img src="/post/2019-11-20-academic-writing-with-rmarkdown_files/xkcd_markdown_word.png" style="width:80.0%" /></p>
 <p>More complex projects usually involve many modifications before the analysis is completed. Each statistical result presented in the report then has to be carefully checked for being up-to-date. This makes working with the copy &amp; paste approach not only tedious but also prone to errors.</p>
 <p>LaTex users might already have an integrated workflow. Maybe a subtle add-on will convince you anyway: Code results can be inserted directly into the text of a .Rmd file by enclosing the code with <code>`r `</code>. For example, the statements in table <a href="#tab:statements">2</a> remain valid even if the underlying data set changes.
 Similarly, regression coefficients can be extracted from a model object. Their values will be automatically updated when, for example, new variables are added to the model. For illustration, we will run a simple linear regression of miles per gallon on a car’s horsepower.</p>
-<p>Nevertheless, writing with RMarkdown at the beginning is more complicated than writing with Word, for example. The more complex the project (and the more practice you have with RMarkdown), the more the initial effort pays off.</p>
+<p>Nevertheless, writing with RMarkdown at the beginning is more complicated than writing with Word, for example. The more complex the project (and the more practice you have with RMarkdown), the more the initial effort pays off.
+<br></p>
 </div>
 <div id="example" class="section level1">
 <h1>Example</h1>
 <p>As in most quantitative analysis, let’s start with computing summary statistics on the variables of interest. We can embed plots and tables using a code environment beginning with <code>```{r}</code> and closing with <code>```</code>. When compiling, RMarkdown will evaluate these environments and display the result in the final document.</p>
+<div id="tables" class="section level2">
+<h2>Tables</h2>
 <pre class="r"><code>summ_stats &lt;- mtcars %&gt;% 
   select(hp, mpg) %&gt;% 
   gather(variable, value) %&gt;% 
@@ -59,6 +59,7 @@ Similarly, regression coefficients can be extracted from a model object. Their v
 summ_stats_tab &lt;- summ_stats %&gt;% 
   knitr::kable(caption = &quot;Summary statistics&quot;) %&gt;%
   kableExtra::kable_styling(bootstrap_options = c(&quot;hover&quot;, &quot;responsive&quot;))</code></pre>
+<p>Note that we used the <code>kable()</code> function by the knitr package. Additionally, kableExtra provides some useful functions to customize the appearance of the table.</p>
 <table class="table table-hover table-responsive" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:summary-statistics">Table 1: </span>Summary statistics
@@ -137,7 +138,9 @@ mpg
 </tr>
 </tbody>
 </table>
-<p>Note that we used the <code>kable()</code> function by the knitr package. Additionally, kableExtra provides some useful functions to customize the appearance of the table.</p>
+</div>
+<div id="plots" class="section level2">
+<h2>Plots</h2>
 <p>You can also embed plots, for example:</p>
 <pre class="r"><code>plot_slm &lt;- mtcars %&gt;% 
   ggplot(aes(hp, mpg)) + 
@@ -146,7 +149,11 @@ mpg
   theme_minimal() +
   labs(x = &quot;Horsepower&quot;, y = &quot;Miles per gallon&quot;)</code></pre>
 <p><img src="/post/2019-11-20-academic-writing-with-rmarkdown_files/figure-html/plot-simple-linear-regression-1.png" width="80%" style="display: block; margin: auto;" /></p>
-<p>As promised above, we can also embed inline code.</p>
+<p><br></p>
+</div>
+<div id="inline-code" class="section level2">
+<h2>Inline code</h2>
+<p>As promised above, it is equally possible to embed inline code.</p>
 <pre class="r"><code># simple linear regression
 slm &lt;- lm(mpg ~ hp, data = mtcars)
 
@@ -176,6 +183,7 @@ slm_coef &lt;- round( coef(slm)[&quot;hp&quot;], 3)</code></pre>
 </tbody>
 </table>
 </div>
+</div>
 <div id="how-it-works" class="section level1">
 <h1>How it works</h1>
 <div class="row">
@@ -192,7 +200,9 @@ slm_coef &lt;- round( coef(slm)[&quot;hp&quot;], 3)</code></pre>
 </div>
 </div>
 </div>
-<p>By using this tool we can generate different output formats from a .Rmd file: PDF, Word, HTML, RTF, and even beamer presentations.</p>
+<p>By using this tool we can generate different output formats from a .Rmd file: PDF, Word, HTML, RTF, and even beamer presentations.
+<br>
+<br></p>
 </div>
 <div id="getting-started" class="section level1">
 <h1>Getting started</h1>
@@ -202,6 +212,7 @@ slm_coef &lt;- round( coef(slm)[&quot;hp&quot;], 3)</code></pre>
 Simply run the following code in the RStudio console.</p>
 <pre><code>install.packages(&#39;tinytex&#39;)
 tinytex::install_tinytex()</code></pre>
+<p><br></p>
 </div>
 <div id="create-an-rproject" class="section level2">
 <h2>Create an RProject</h2>
@@ -214,10 +225,11 @@ tinytex::install_tinytex()</code></pre>
 <li>If available, select the checkbox for “Create a git repository.”</li>
 <li>Click the “Create Project” button.</li>
 </ol>
+<p><br></p>
 </div>
 <div id="create-rmarkdown-documents" class="section level2">
 <h2>Create RMarkdown documents</h2>
-<p>From the File menu, select New File and then R Markdown from the drop down menus. A New R Markdown window will open. You may add metadata like the document’s title or the author. However, we can also change this later in the document.</p>
+From the File menu, select New File and then R Markdown from the drop down menus. A New R Markdown window will open. You may add metadata like the document’s title or the author. However, we can also change this later in the document.
 <div class="row">
 <div class="col-md-6">
 <p><img src="/post/2019-11-20-academic-writing-with-rmarkdown_files/create-rmarkdown-file.PNG" style="width:95.0%" /></p>
@@ -262,10 +274,12 @@ geometry: &quot;left=3cm, right=3cm, top=2cm, bottom=2.5cm&quot;  # adjust margi
 \newcommand{\AssignmentName}{Term Paper}
 \newcommand{\Title}{An Informative Title}
 </code></pre>
-<p>By specifying <code>\newcommand{\Title}</code> RMarkdown will insert “An informative title” at all places in the document where you write <code>\Title</code> (e.g. front matter, declaration of authorship, …). In this way, we no longer have to search the entire document for outdated text modules if they have been changed</p>
+<p>By specifying <code>\newcommand{\Title}</code> RMarkdown will insert “An informative title” at all places in the document where you write <code>\Title</code> (e.g. front matter, declaration of authorship, …). In this way, we no longer have to search the entire document for outdated text modules if they have been changed.</p>
+<p><br></p>
 </div>
 <div id="write-and-compile-your-document" class="section level2">
 <h2>Write and compile your document</h2>
 <p>RMarkdown provides a variety of options to format the written text. <a href="https://bookdown.org/yihui/bookdown/markdown-syntax.html">Here</a> you can find a comprehensive guide. Tables and graphs can be inserted as shown above. Finally, the document can be compiled using the key combination <code>shift + ctrl + k</code>.</p>
+<p><br></p>
 </div>
 </div>
