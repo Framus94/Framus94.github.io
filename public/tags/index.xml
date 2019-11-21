@@ -2,120 +2,120 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on David Broska</title>
-    <link>/tags/</link>
+    <link>https://david-broska.netlify.com/tags/</link>
     <description>Recent content in Tags on David Broska</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 11 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://david-broska.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Arab Spring</title>
-      <link>/tags/arab-spring/</link>
+      <link>https://david-broska.netlify.com/tags/arab-spring/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/arab-spring/</guid>
+      <guid>https://david-broska.netlify.com/tags/arab-spring/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Careers</title>
-      <link>/tags/careers/</link>
+      <link>https://david-broska.netlify.com/tags/careers/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/careers/</guid>
+      <guid>https://david-broska.netlify.com/tags/careers/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Health</title>
-      <link>/tags/health/</link>
+      <link>https://david-broska.netlify.com/tags/health/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/health/</guid>
+      <guid>https://david-broska.netlify.com/tags/health/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LaTex</title>
-      <link>/tags/latex/</link>
+      <link>https://david-broska.netlify.com/tags/latex/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/latex/</guid>
+      <guid>https://david-broska.netlify.com/tags/latex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Labour Markets</title>
-      <link>/tags/labour-markets/</link>
+      <link>https://david-broska.netlify.com/tags/labour-markets/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/labour-markets/</guid>
+      <guid>https://david-broska.netlify.com/tags/labour-markets/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Panel Analysis</title>
-      <link>/tags/panel-analysis/</link>
+      <link>https://david-broska.netlify.com/tags/panel-analysis/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/panel-analysis/</guid>
+      <guid>https://david-broska.netlify.com/tags/panel-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publishing</title>
-      <link>/tags/publishing/</link>
+      <link>https://david-broska.netlify.com/tags/publishing/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/publishing/</guid>
+      <guid>https://david-broska.netlify.com/tags/publishing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>R</title>
-      <link>/tags/r/</link>
+      <link>https://david-broska.netlify.com/tags/r/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/r/</guid>
+      <guid>https://david-broska.netlify.com/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>RMarkdown</title>
-      <link>/tags/rmarkdown/</link>
+      <link>https://david-broska.netlify.com/tags/rmarkdown/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rmarkdown/</guid>
+      <guid>https://david-broska.netlify.com/tags/rmarkdown/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SOEP Data</title>
-      <link>/tags/soep-data/</link>
+      <link>https://david-broska.netlify.com/tags/soep-data/</link>
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/soep-data/</guid>
+      <guid>https://david-broska.netlify.com/tags/soep-data/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Visual Arts</title>
-      <link>/tags/visual-arts/</link>
+      <link>https://david-broska.netlify.com/tags/visual-arts/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/visual-arts/</guid>
+      <guid>https://david-broska.netlify.com/tags/visual-arts/</guid>
       <description></description>
     </item>
     
     <item>
       <title>World Bank Data</title>
-      <link>/tags/world-bank-data/</link>
+      <link>https://david-broska.netlify.com/tags/world-bank-data/</link>
       <pubDate>Mon, 11 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/world-bank-data/</guid>
+      <guid>https://david-broska.netlify.com/tags/world-bank-data/</guid>
       <description></description>
     </item>
     
