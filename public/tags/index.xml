@@ -75,15 +75,6 @@
     </item>
     
     <item>
-      <title>R</title>
-      <link>https://david-broska.netlify.com/tags/r/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://david-broska.netlify.com/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>RMarkdown</title>
       <link>https://david-broska.netlify.com/tags/rmarkdown/</link>
       <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
@@ -98,6 +89,15 @@
       <pubDate>Wed, 20 Nov 2019 00:00:00 +0000</pubDate>
       
       <guid>https://david-broska.netlify.com/tags/soep-data/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social Status</title>
+      <link>https://david-broska.netlify.com/tags/social-status/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://david-broska.netlify.com/tags/social-status/</guid>
       <description></description>
     </item>
     
