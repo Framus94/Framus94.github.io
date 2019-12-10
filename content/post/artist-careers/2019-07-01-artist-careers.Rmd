@@ -3,7 +3,7 @@ title: Path Dependencies in Careers of Visual Artists
 summary: "How persistent are initial differences?"
 author: ~
 bibliography: bib.bib
-date: '2019-07-01'
+date: '2069-07-01'
 slug: path-dependencies
 categories: []
 tags:
