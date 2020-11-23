@@ -50,9 +50,9 @@ time_format = "3:04 PM"
 ############################
 
 # Enter contact details (optional). To hide a field, clear it to "".
-email = "d.s.broska@lse.ac.uk"
+email = "david.broska@zu.de"
 phone = ""
-address = "Department of Methodology<br>Col.8.07, Columbia House<br>London School of Economics & Political Science<br>Houghton Street<br>London WC2A 2AE"
+address = "Zeppelin University<br>Fallenbrunnen 3<br>88045 Friedrichshafen<br>Office: FAB 1.26"
 
 # Office hours: use `<br>` to insert a line break, or set to "" to remove office hours
 office_hours = ""

@@ -2,6 +2,6 @@
 active: true
 subtitle: ""
 title: Tags
-weight: 65
+weight: 35
 widget: tag_cloud
 ---

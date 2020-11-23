@@ -6,7 +6,7 @@ filter_tag: ""
 subtitle: ""
 title: Recent Posts
 view: 2
-weight: 40
+weight: 30
 widget: posts
 ---
 
