@@ -14,7 +14,7 @@ weight = 20
 
 +++
 
-In Spring 2021, I am the instructor for the following courses at Zeppelin University:
+In spring 2021, I am the instructor for the following courses at Zeppelin University:
 
 - [Computational Political Science (243113) ](https://zuhause.zeppelin-university.net/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=COURSEDETAILS&ARGUMENTS=-N000000000000002,-N000724,-N0,-N377385078800143,-N377385078800144,-N0,-N0,-N0)
 - [Empirical Research Design (100007G)](https://zuhause.zeppelin-university.net/scripts/mgrqispi.dll?APPNAME=CampusNet&PRGNAME=COURSEDETAILS&ARGUMENTS=-N000000000000002,-N000640,-N0,-N377205468171698,-N377205468199699,-N0,-N0,-N3,-AHoUQegHqxuVtQSKUWDNjmSLUfNLPONWyRY5J7MKYvQpxVImgcfKXxQ57WUV07Y6LVjUNYgHfPqGHeUp5OD6ZHUog7DKV4IHvPzB-CQR6eUKJONPh3SltmdmwxNPV7YPH7DLXQzwlxdcA4oPlvMHoYIpocDcF4oLmPjRAxfVjfjHBOSommqWovvN9cYR9mqLuHfoj4qGEPNZQmdAAxzo8VjBFYYaNP-UyxY5JQzwYmZW7mZKjeqZQvzZevWLMRU5XVtAdfdatvdo8mB5BQSKZ3uitmSHf3BHACbNNfNwSRWK3HfZI7YKAeYDZxUpMvSaF7uUAPBKNOdo-4M5NfuoKOIlZHqRBcDm9O-7ZxYHtPfo3VMoPRge64gej7ZWLRdLqHvAwvM5FVzZjVZKu7YGTVN6L3I7dVSPDPqeZcgHHQzU6H-NG)
