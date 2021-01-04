@@ -1,7 +1,6 @@
 ---
 authors:
 - admin
-bio: Working at the intersection of the sociology of inequalities and valuation, I am interested in how status differences explain other forms of inequalities.
 education:
   courses:
   - course: MSc Social Research Methods
@@ -24,7 +23,7 @@ social:
   link: '#contact'
 - icon: github
   icon_pack: fab
-  link: https://github.com/Framus94
+  link: https://github.com/davidbroska
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/david-broska/
