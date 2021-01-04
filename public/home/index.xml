@@ -20,6 +20,16 @@
     </item>
     
     <item>
+      <title>Teaching</title>
+      <link>https://david-broska.netlify.com/home/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://david-broska.netlify.com/home/teaching/</guid>
+      <description>In spring 2021, I am the instructor for the following courses at Zeppelin University:
+ Computational Political Science (243113)  Empirical Research Design (100007G)  </description>
+    </item>
+    
+    <item>
       <title>Recent Posts</title>
       <link>https://david-broska.netlify.com/home/posts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -38,20 +48,20 @@
     </item>
     
     <item>
-      <title>People</title>
-      <link>https://david-broska.netlify.com/home/people/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://david-broska.netlify.com/home/people/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://david-broska.netlify.com/home/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://david-broska.netlify.com/home/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>People</title>
+      <link>https://david-broska.netlify.com/home/people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://david-broska.netlify.com/home/people/</guid>
       <description></description>
     </item>
     

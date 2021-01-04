@@ -1,0 +1,161 @@
+---
+title: How the Art Jury Thinks
+summary: Exploring Evaluation Criteria for Awarding Art Prizes
+author: ''
+date: '2021-01-03'
+slug: how-the-art-jury-thinks
+categories: []
+tags:
+  - Visual Arts
+  - Evaluation
+image:
+  caption: ''
+  focal_point: ''
+---
+
+# Intro
+
+
+Awards are conferred to candidates for the worth of their contribution, determined by relevant criteria in their respective field such as the arts or science. By emphasizing uncertainty, however, economic sociology draws attention to the ambiguity of the criteria that should enable a fair and effective selection process (Podolny 1994). Qualities of candidates could be very diverse and therefore not fully comparable. In other cases, candidates could satisfy the required criteria equally well, so that they are on a par with each other. The question of how individuals make informed decisions when the merit of people or the worth of goods are difficult to assess has motivated studies on fashion (Godart and Mears 2009), fine wine (Benjamin and Podolny 1999), visual art (Beckert and Rössel 2013), as well as on television and film (Bielby and Bielby 1994; 1999). In these studies, scholars highlighted the role of “judgment devices” (Karpik 2010) such as rankings, guides, brands, and recognized authorities that allow for informed decisions and reduce ambiguity about which option is best of those that are available.
+
+This line of research emphasizes the significance of external guidelines in the process of decision making. However, little attention was devoted to the idiosyncratic preferences of the evaluators, and if it was, it was considered its own source of uncertainty. In her literature review, Lamont (2012, 212) argues that future research should consider “more systematically the place of idiosyncratic preferences” of evaluators. To address this gap, this study aims to explore how jury members understand the role of their individual taste in art when selecting a candidate for an award. Specifically, I will examine the relative importance of idiosyncratic taste as opposed to other “judgment devices” - i.e. criteria that are not inherent to the artwork on which jury members base their decision. For example, Fraiberger et al. (2018) show that representatives of prestigious exhibition venues tend to choose artists who exhibited at reputable places before. Other indicators of the artists’ career status are the number of publications, media coverage, or being a professor at an art academy (Beckert and Rössel 2013; Ertug et al. 2016). Although these studies identified various determinants of success, little is known about how and in which contexts these factors make success more likely. This project contributes to this area of economic sociology by examining how jury members negotiate different criteria and information when selecting artists for awards. Using semi-structured interviews, this study aims to answer the following question:
+
+*How do jury members understand the role of their individual taste of art relative to indicators of an artist's career status?*
+
+# Method
+
+## Data Collection
+
+For the recruitment of participants, it was essential that they had experience as members of several juries for art awards. One family member was able to contact a museum director matching this criterion. Further participants were recruited through snowball sampling. That is, after completing the first interview, I was provided with email addresses of other jury members, two of whom I could then interview. While a potential weakness of snowball sampling is that people may refer to others who are similar to them, this technique proved to be useful for recruiting hard-to-reach participants (Flick 2009, 110).
+
+Interviews are the method of choice since the study aims to explore participant understandings of evaluation criteria in their complexity and rich detail. Gathering this information often involves asking specific follow-up questions, which are more appropriate in one-to-one situations than in focus group settings. To achieve this flexibility and maintain a clear focus on the different topics of this study, I chose a semi-structured interview format using a responsive interview style (Rubin and Rubin 2005). In her study on evaluation practices in academic peer review, Lamont (2009, 14) shows that participant observation can be used in addition to interviews to probe evaluators about key moments in the decision-making process. However, the possibility of using ethnographic methods is restricted by access barriers of evaluation procedures. For example, certain aspects of the evaluation process may be confidential and inaccessible to non-jury members. Instead, this study relies on interview data based on the jury members’ memories on their deliberations during their evaluation. Loss in reliability could therefore be due to incomplete or incorrect memory (Wixted, Mickes, and Fisher 2018). 
+
+To meet the safety standards adopted during the COVID-19 pandemic, the interviews were conducted online. Therefore, interviewees were free to choose their preferred platform (Skype, Zoom, etc.), the scope of the study was explained in detail, and the confidentiality and anonymity of the data were emphasized. Informed consent was then given verbally before the interview.
+
+## Ethics and Reflexivity
+
+Two of the three interviews were conducted in German, as I thought it was essential that the jury members were able to speak in their mother tongue. When it comes to personal preferences in the arts, language barriers could prevent the description of subtle differences and details. Among the jury members was also a person with French and North American roots whom I interviewed in English (see appendix). Also, I remained aware of the possibility that jury members might be uncomfortable speaking about the evaluation process and the biases they bring to bear on the process. Therefore, I explicitly communicated that I would not ask about specific art awards or why jury members endorsed a particular candidate. Furthermore, I have assured participants that all information gathered during the interviews would be used exclusively for this study.
+
+Not only could the potential sensitivity of the topic have an influence on the data generation process, but also my position as a researcher, i.e. my preconceptions, identity, and experiences. The participants were two women and one man, aged between 53 and 65, with education in art history and/or many years of practical experience in the field. As a sociologist with no professional occupation in the visual arts, I consider myself an outsider in this research setting. On the one hand, this required listening carefully and asking about unclear, art-specific expressions. On the other hand, being an outsider might have been advantageous since jury members might feel more comfortable providing information to someone who is not involved in the arts professionally.
+
+Throughout this study, I aimed to continually reflect on my position in the process of creating knowledge and to respect the autonomy, dignity, and privacy of research participants (Guillemin and Gillam 2004).
+
+## Data Analysis
+
+This study intended to find out how jury members understand the role of their idiosyncratic taste in art when selecting artists for an award. Based on the stories, perceptions, experiences, and concepts that the jury members described, I sought to identify the main ideas connected to idiosyncratic preferences in the context of selection processes. Thematic analysis, as described by Braun and Clarke (2013), provides a useful framework for this exploratory approach. I therefore used thematic analysis to systematize the patterns identified within and across interviews from basic classifications, to organizing themes, and finally up to global themes, which are an adequate representation of the whole corpus of texts. A thematic network is used for effective communication of the results but also as a method of their validation. After identifying relationships between codes and themes, the structure of the network was checked against the interview material (Attride-Stirling 2016). There was no explicit preconception guiding the analysis. Instead, I adopted an inductive approach to organize the patterns in the corpus.
+
+# Findings
+
+The thematic network below shows three organizing themes that connect the identified patterns in the interviews. Judgment on Quality describes that the jury members’ aim to choose the best proposal based on the criteria of innovativeness, craftsmanship, and relevance to current socio-political issues. To evaluate the fulfillment of these criteria, jurors draw on their knowledge of art history and professional experience. Other aspects were either deemed inappropriate (Idiosyncratic Preferences as Illegitimate) or only considered secondary criteria (Career Indicators as Minor Criteria). The global theme of these interviews referred to how jury members navigate between different criteria to determine the artistic merit of a proposal.
+
+
+```{r thematic-network, fig.align='center', fig.cap="Thematic network of codes, organizing themes and a global theme"}
+knitr::include_graphics("/post/2021-01-03-how-the-art-jury-thinks/index.en_files/thematic_network.png")
+```
+
+
+
+
+## Idiosyncratic Preferences as Illegitimate
+
+The expression of *emotional* involvement of jury members with an artwork of potential prize winners was considered inappropriate. Participant 3 highlighted that the merit of portfolios submitted by artists was discussed “on an objective level, not on an emotional level”. Participant 2 recalled a discussion in which a jury member “said that because she is now so incredibly touched by this work, the work must be good. You claim the highest subjectivity, where you then sneak in that this is meant to be objective”. 
+
+Participant 2 also described the assertion of personal taste in a jury session for an art award as a *striving for power*. Regarding an artwork that he did not find personally appealing but of high quality, the participant said that he “wouldn't hang it up or buy it, but it's good. If you can't say that, you're narrow-minded. Then you're just someone seeking control. Power. Over others.” 
+
+If evaluators support candidates, all participants said that evaluators need to justify their choices by criteria based on art history or pertinence of the artist's work regarding current socio-political events. In contrast, participant 2 considered the preference for certain artists or works of art as *premature*:
+
+>“And that was then the passion. When you're young. You're obsessed with all that's beautiful and all that impresses you. Without theorizing or anything. That's what you have to work for. So knowing what is surrealism, cubism…”
+
+## Judgment on Quality
+
+Although these descriptions initially suggest that jury members perceive their judgment as free of personal affinities, it was self-understood that judgments are informed by their personal experiences, acquaintances with artists, and their field of expertise. For example, participant 1 made it explicit that her understanding and evaluation of art was significantly influenced by the German artist Joseph Beuys:
+
+> “[V]ery early on I came across one of the most important artists, Joseph Beuys, who I also got to know personally … A political person, very engaged. That's also a criterion that is certainly important when I meet artists, but not exclusively.”
+
+Crucially, all participants understood *personal acquaintances* with artists not understood as possible biases, but as a means of making competent judgments. For example, participant 3 recalls that “sometimes there are certain artists where a jury member is more familiar, for example with that artist's work. I mean, that, of course, is then a big advantage, you know”. Instead, jury members highlighted the cumulative nature of *experiences* that converge in the ability to assess the quality of artworks. For example, participant 1 said that “[e]ven though I now represent concrete art professionally, I can also see the quality in figurative art. These are simply experiences that you acquire in the course of your professional life”. Accordingly, participant 3 argues that “personal preference is based on professional expertise and experience. […] It is not a thing of personal taste or artists who have worked with the curator before”. Like the other participants she thinks that “it is absolutely possible to make an objective judgment. That is what all jury members aim to do”. Instead of quality being merely a subjective matter of interpretation, the participants assumed that it can be defined more based on innovativeness, craftsmanship, and relevancy regarding current societal issues. 
+
+Participant 3 also assigns an important role to “orientation discussions” to *share information*. In her view, the “argumentation between the jury members” help to fill knowledge gaps that arise from different specializations of jury members, while also serving as a forum in which jurors can negotiate the relative priority of criteria. In contrast, participant 2 expressed concerns about *hierarchies* during these discussions:
+
+>“There are hierarchies and insubordinations. But then you don't have the right arguments. And if whoever's trying to decide is actually eloquent... Well, that's also a status thing.”
+
+## Career Indicators
+
+In their judgment, jurors may also have to consider the purpose of the art prize. In an “open call” (P3), the jury is given free hand, whereas in other cases the decision must be made following the specific criteria of an art genre, the exhibition context in which the work is shown or the interests of sponsors. Except in the case of these external constraints, jury members make their decisions based on elements that are inherent in the artist’s submission for the award. Participant 3 indicates that information about the artists’ education or past exhibitions are optional criteria for jury members: “In today’s age, when we're unsure about an artist, you often then have a look on the Internet to try to get more information about the artist”. When I asked participant 1 about the importance of these factors, she replied: “As many aspects as possible, but ultimately the convincing formal design, because we are in the visual arts”. Participant 2 even claims that previous exhibition successes are unrelated to the artwork:
+
+> “I may or may not like the artwork. Regardless of the exhibition venue. These are rather their arbitrary processes. So, you say: great. Career!”
+
+
+# Discussion
+
+## Discussion of Findings
+
+In contrast to Lamont's (2012, 212) conjecture that “emotions and idiosyncratic tastes are more often recognized as legitimate contributors to evaluation in artistic fields”, the interviews revealed that jury members did not perceive these criteria as acceptable. In their understanding, jurors are expected to discuss and judge candidates based on the merit of their proposal for its innovativeness, craftsmanship, and its degree of engagement with socio-political topics. These criteria constituted the accepted basis for decision-making.
+Under the premise that no personal stakes are involved, acquaintance with the artists and familiarity with their work were not considered a source of possible bias in the decision-making process. Instead, these insights were perceived as valuable contributions in the discussions to close gaps in knowledge resulting from different specializations of jury members. However, one interviewee referred to hierarchies in these jury sessions, so that the selection of a candidate may also show elements of a power struggle between jury members. Recent literature discusses new ways to prevent jury decisions from being based on other criteria than the substantive merit of candidates (Rost and Doehne 2019).
+
+Despite these group dynamics, however, it should be emphasized that the art juries, with their focus on criteria inherent to art, offer an opportunity for less established artists. Yogev (2010) shows that it is difficult for artists to convince galleries or museum representatives to organize an exhibition if the artists have not exhibited before. Since career indicators such as previous exhibition successes and publications only play a role for certain art awards and are otherwise a minor criterion, art awards contribute to the mobility of artists' careers. This is an important finding considering the wide inequalities between artists, whereby those who are already successful are often the ones who are rewarded (Menger 1999).
+
+These interviews also offer an important insight regarding the role of “judgment devices” (Karpik 2010) in evaluation processes. In accordance with the prevailing view in economic sociology, I found that indicators of success reduce uncertainty in ambivalent decision-making scenarios. However, jury members only draw on career indicators of artists if their expertise in art history and professional experiences do not allow for an unequivocal decision. When studying evaluation processes, it is therefore important to consider more precisely the context and personal background of the decision-makers. Future research can therefore build on Ertug et al. (2016), who suggested a similar approach.
+
+## Limitations
+
+Despite the initial concern that the interviewees might be uncomfortable talking about their jury work, the responses were sufficiently detailed to answer the research question. In an expanded study, it would be valuable to conduct a participatory observation in a jury session. This could provide insights into aspects that were not described by the interviewees, due to their subtlety or because they were not recalled. This project was also limited in its thematic scope. For example, this research did not explore how and in which context status dynamics and power relations of the jury members affect the selection decisions; something that should be addressed in future research.
+
+Moreover, the interviewees alluded to the objectivity of their judgment on art. This notion and the implied positive view were not taken at face value. While jurors might indeed deviate from criteria they consider to be ideal, the goal was not to ascertain the degree to which their judgments are objective compared to ground truth. Instead, this analysis aimed to contribute to studies on valuation processes by exploring what the jurors’ understandings of relevant criteria imply for this area of research.
+
+It should be noted again that the interviews with participants 1 and 2 were conducted in German. While this was done to reduce language barriers for the interviewees, their statements had to be translated into English to be quoted in this study. To the best of my ability, I tried to avoid inaccuracies. 
+
+Another limitation is the small sample size of three interviews and the homogeneity of the participants. The sample consisted of a museum director and two curators for contemporary visual arts with extensive experience in the field. Less experienced jury members or those with a different background might consider other criteria relevant than those inherent to the artwork. Gallerists, as opposed to museum representatives, for example, might put more emphasis on prior exhibition successes as an indicator of the artist's commercial viability (Ertug et al. 2016).
+
+
+
+# References
+
+Attride-Stirling, Jennifer. 2016. “Thematic Networks: An Analytic Tool for Qualitative Research:” Qualitative Research, November. https://doi.org/10.1177/146879410100100307.
+
+Beckert, Jens, and Jörg Rössel. 2013. “The Price of Art.” European Societies 15 (2): 178–95. https://doi.org/10.1080/14616696.2013.767923.
+
+Benjamin, Beth, and Joel M. Podolny. 1999. “Status, Quality, and Social Order in the California Wine Industry.” Administrative Science Quarterly 44 (3): 563. https://doi.org/10.2307/2666962.
+
+Bielby, William T., and Denise D. Bielby. 1994. “‘All Hits Are Flukes’: Institutionalized Decision Making and the Rhetoric of Network Prime-Time Program Development.” American Journal of Sociology 99 (5): 1287–1313.
+
+———. 1999. “Organizational Mediation of Project-Based Labor Markets: Talent Agencies and the Careers of Screenwriters.” American Sociological Review 64 (1): 64–85. https://doi.org/10.2307/2657278.
+
+Bishop, Claire. 2006. “The Social Turn: Collaboration and Its Discontents.” Artforum International 44 (9): 178–83.
+
+Braun, Virginia, and Victoria Clarke. 2013. Successful Qualitative Research: A Practical Guide for Beginners. sage.
+
+Ertug, Gokhan, Tamar Yogev, Yonghoon G. Lee, and Peter Hedström. 2016. “The Art of Representation: How Audience-Specific Reputations Affect Success in the Contemporary Art Field.” Academy of Management Journal 59 (1): 113–34. https://doi.org/10.5465/amj.2013.0621.
+
+Flick, Uwe. 2009. An Introduction to Qualitative Research. 4th ed. Los Angeles: Sage Publications.
+
+Fraiberger, Samuel, Roberta Sinatra, Magnus Resch, Christoph Riedl, and Albert-László Barabási. 2018. “Quantifying Reputation and Success in Art.” Science, November. https://doi.org/10.1126/science.aau7224.
+
+Godart, Frédéric C., and Ashley Mears. 2009. “How Do Cultural Producers Make Creative Decisions? Lessons from the Catwalk.” Social Forces 88 (2): 671–92.
+
+Guillemin, Marilys, and Lynn Gillam. 2004. “Ethics, Reflexivity, and ‘Ethically Important Moments’ in Research.” Qualitative Inquiry 10 (2): 261–80. https://doi.org/10.1177/1077800403262360.
+
+Karpik, Lucien. 2010. Valuing the Unique: The Economics of Singularities. Princeton University Press.
+
+Lamont, Michèle. 2009. How Professor Think: Inside the Curious World of Academic Judgment. Cambridge, MA: Harvard University Press.
+
+———. 2012. “Toward a Comparative Sociology of Valuation and Evaluation.” Annual Review of Sociology 38: 201–21.
+
+Lo Iacono, Valeria, Paul Symonds, and David H.K. Brown. 2016. “Skype as a Tool for Qualitative Research Interviews.” Sociological Research Online 21 (2): 103–17. https://doi.org/10.5153/sro.3952.
+
+Menger, Pierre-Michel. 1999. “Artistic Labor Markets and Careers.” Annual Review of Sociology 25 (1): 541–74. https://doi.org/10.1146/annurev.soc.25.1.541.
+
+Podolny, Joel M. 1994. “Market Uncertainty and the Social Character of Economic Exchange.” Administrative Science Quarterly 39 (3): 458–83. https://doi.org/10.2307/2393299.
+
+Roose, H., W. Roose, and S. Daenekindt. 2018. “Trends in Contemporary Art Discourse: Using Topic Models to Analyze 25 Years of Professional Art Criticism.” Cultural Sociology 12 (3): 303–24. https://doi.org/10.1177/1749975518764861.
+
+Rost, Katja, and Malte Doehne. 2019. “»Die Wahl Zu Dreyen«: Die Zufallswahl von Professoren an Der Universität Basel Im 18. Jahrhundert.” Zeitschrift Führung Und Organisation 88 (3): 169–74.
+
+Rubin, Herbert, and Irene Rubin. 2005. “The Responsive Interview as an Extended Conversation.” In Qualitative Interviewing: The Art of Hearing Data, 2nd ed., 108–28. Thousand Oaks, California: SAGE Publications, Inc. https://doi.org/10.4135/9781452226651.
+
+Wixted, John T., Laura Mickes, and Ronald P. Fisher. 2018. “Rethinking the Reliability of Eyewitness Memory.” Perspectives on Psychological Science 13 (3): 324–35. https://doi.org/10.1177/1745691617734878.
+
+Yogev, Tamar. 2010. “The Social Construction of Quality: Status Dynamics in the Market for Contemporary Art.” Socio-Economic Review 8 (3): 511–36. https://doi.org/10.1093/ser/mwp030.
+
+
+
+

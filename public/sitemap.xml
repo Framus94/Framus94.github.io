@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>https://david-broska.netlify.com/post/2021-01-03-how-the-art-jury-thinks/</loc>
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>https://david-broska.netlify.com/post/health/health-marriage-and-labour-market-success/</loc>
       <lastmod>2019-11-20T00:00:00+00:00</lastmod>
     </url>
@@ -69,7 +77,16 @@
     <url>
     
       <loc>https://david-broska.netlify.com/</loc>
-      <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/tags/evaluation/</loc>
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -114,7 +131,7 @@
     <url>
     
       <loc>https://david-broska.netlify.com/post/</loc>
-      <lastmod>2019-11-20T00:00:00+00:00</lastmod>
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -158,6 +175,15 @@
     
       <loc>https://david-broska.netlify.com/tags/</loc>
       <lastmod>2019-02-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>https://david-broska.netlify.com/tags/visual-arts/</loc>
+      <lastmod>2021-01-03T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
