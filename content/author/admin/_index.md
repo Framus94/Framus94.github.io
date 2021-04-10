@@ -3,6 +3,8 @@ authors:
 - admin
 education:
   courses:
+  - course: PhD Sociology
+    institution: Stanford (Start in fall 2021)
   - course: MSc Social Research Methods
     institution: London School of Economics
   - course: BA Sociology, Politics & Economics
