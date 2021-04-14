@@ -25,7 +25,7 @@ library(leaflet); library(leaflet.extras); library(dplyr); library(kableExtra)
 ```
 
 
-# Introduction 
+# Introduction
 
 This article analyzes how social hierarchies between visual artists arise and persist. Specifically, I draw on an empirical strategy proposed by @fraiberger2018 to distinguish successful and less successful careers. The authors analyze artist careers as sequences of exhibition participations in museums and galleries of higher or lower prestige. They observe a path dependency between the artists' first exhibitions and the further course of their careers.
 By analyzing the chances and consequences of accessing high-profile institutions, they contribute to our understanding of how inequalities emerge. Hence, a detailed review of the study by @fraiberger2018 is certainly worthwhile.
